@@ -1,0 +1,30 @@
+body {
+  background-color: #6c757d;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background-color: white;
+  color: #6c757d;
+}
+
+.navbar {
+  background-color: #6c757d;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ddd;
+}
+
+.btn-info {
+  background-color: rgb(255, 255, 118);
+}
