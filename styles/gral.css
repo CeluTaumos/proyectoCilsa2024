@@ -1,5 +1,7 @@
 body {
-  background-color: #6c757d;
+  background: #bdc3c7; 
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); 
   color: white;
   font-family: "Lato", sans-serif;
 }
@@ -31,7 +33,10 @@ h1 h2 h3 h4 h5 {
 .btn-info {
   background-color: rgb(255, 255, 118);
 }
-
+/* IMG*/
+.logo {
+heigh:3.125em;
+}
 /* CARDS INDEX */
 .custom-card {
   width: 18rem;
