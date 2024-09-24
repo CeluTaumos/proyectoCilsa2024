@@ -1,14 +1,17 @@
 body {
   background-color: #6c757d;
   color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 footer {
   background-color: white;
   color: #6c757d;
 }
-
+h1 h2 h3 h4 h5 {
+  font-family: "Poppins", sans-serif;
+}
+/*NAVBAR*/
 .navbar {
   background-color: #6c757d;
 }
@@ -24,7 +27,40 @@ footer {
 .nav-link:hover {
   color: #ddd;
 }
-
+/* BOTONES*/
 .btn-info {
   background-color: rgb(255, 255, 118);
+}
+
+/* CARDS INDEX */
+.custom-card {
+  width: 18rem;
+  border: 2px solid yellow;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.custom-img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.card-text a {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  color: yellow;
 }

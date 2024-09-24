@@ -15,19 +15,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div>
-          <a class="navbar-brand" href="index.html">
-            <img
-              src="./source/logofinal.png"
-              alt="logo AutoXpress"
-              style="height: 50px"
-            />
-          </a>
-        </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="./source/logofinal.png"
+            alt="logo AutoXpress"
+            style="height: 50px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +54,6 @@
               <a class="nav-link" href="./pages/categorias.html">Categorías</a>
             </li>
           </ul>
-
           <form class="form-inline my-2 my-lg-0">
             <div class="input-group">
               <input
@@ -60,26 +62,33 @@
                 placeholder="Buscar tu auto"
                 aria-label="Buscar tu auto"
               />
-              <span class="input-group-text" id="basic-addon1">
-                <i class="fas fa-search"></i>
-              </span>
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
             </div>
           </form>
         </div>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main>
       <div class="container">
         <div class="row align-items-center" style="min-height: 80vh">
           <!-- Columna con el eslogan -->
-          <div class="col-md-6 text-center text-md-left">
-            <h1 class="display-1 font-weight-bold">AutoXpress</h1>
-            <p class="lead">Tu próximo auto</p>
-            <p class="lead">más cerca de lo que crees</p>
-            <button type="button" class="btn btn-info">màs información</button>
+          <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+            <h1 class="display-1">AutoXpress</h1>
+            <div class="text-center t-2">
+              <h2 class="lead font-weight-bold fs-5">Tu próximo auto</h2>
+              <h2 class="lead">más cerca de lo que crees</h2>
+              <button type="button" class="btn btn-info">
+                Más información
+              </button>
+            </div>
           </div>
-          <!-- Columna con la img -->
+          <!-- Columna con la imagen -->
           <div class="col-md-6 text-center">
             <img
               src="./assets/img/autoIndex.jpg"
@@ -90,8 +99,64 @@
           </div>
         </div>
       </div>
+
+      <!-- Cards Section -->
+      <div class="container d-flex justify-content-around flex-wrap mt-5">
+        <div class="card custom-card mb-4">
+          <div class="card-img-overlay d-flex align-items-end">
+            <p class="card-text lead text-uppercase">
+              <a href="#" class="text-white">Nuevos</a>
+            </p>
+          </div>
+          <img
+            src="./assets/img/autosIndex.jpg"
+            class="card-img-top custom-img"
+            alt="..."
+          />
+        </div>
+
+        <div class="card custom-card mb-4">
+          <div class="card-img-overlay d-flex align-items-end">
+            <p class="card-text lead text-uppercase">
+              <a href="#" class="text-white">Usados</a>
+            </p>
+          </div>
+          <img
+            src="./assets/img/autosIndex.jpg"
+            class="card-img-top custom-img"
+            alt="..."
+          />
+        </div>
+
+        <div class="card custom-card mb-4">
+          <div class="card-img-overlay d-flex align-items-end">
+            <p class="card-text lead text-uppercase">
+              <a href="#" class="text-white">Híbridos</a>
+            </p>
+          </div>
+          <img
+            src="./assets/img/autosIndex.jpg"
+            class="card-img-top custom-img"
+            alt="..."
+          />
+        </div>
+
+        <div class="card custom-card mb-4">
+          <div class="card-img-overlay d-flex align-items-end">
+            <p class="card-text lead text-uppercase">
+              <a href="#" class="text-white">Consignación</a>
+            </p>
+          </div>
+          <img
+            src="./assets/img/autosIndex.jpg"
+            class="card-img-top custom-img"
+            alt="..."
+          />
+        </div>
+      </div>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-light text-center py-4">
       <p class="text-gray mb-1">
         &copy; 2024 AutoXpress. Todos los derechos reservados.
@@ -119,12 +184,13 @@
             >GitHub: CeluTaumos</a
           >
         </li>
-        <li class="mx-3"><strong>Gonzalo Palomo</strong></li>
-        <!-- faltan datos de contacto -->
+        <li class="mx-3">
+          <strong>Gonzalo Palomo</strong>
+        </li>
       </ul>
     </footer>
 
-    <!-- links de boostrap,fontawesome,etc-->
+    <!-- Links de Bootstrap, FontAwesome, etc -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
