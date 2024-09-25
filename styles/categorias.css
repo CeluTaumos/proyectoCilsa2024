@@ -1,18 +1,23 @@
+html,
 body {
   height: 100%;
   margin: 0;
+}
+
+body {
   padding: 0;
   display: flex;
   flex-direction: column;
   background: #c9d6ff;
   background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
   background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-
   color: rgb(124, 124, 124);
   font-family: "Lato", sans-serif;
   flex: 1;
 }
-
+main {
+  flex: 1;
+}
 footer {
   background: #0f2027 !important;
   background: -webkit-linear-gradient(
@@ -77,6 +82,15 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.accordion-button {
+  background-color: #0000005c;
+  border: none;
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;

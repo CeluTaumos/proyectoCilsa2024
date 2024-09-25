@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AutoXpress - Tienda Online de Vehículos</title>
+    <title>AutoXpress - Detalles de la Harley Davidson 883</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="./styles/gral.css" />
+    <link rel="stylesheet" href="../styles/categorias.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="index.html">
-          <img src="./source/logofinal.png" alt="logo AutoXpress" />
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../source/logofinal.png"
+            alt="logo AutoXpress"
+            class="img-fluid logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -33,32 +42,210 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link text-dark" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/about.html">About</a>
+              <a class="nav-link text-dark" href="./pages/about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./pages/categorias.html">Categorías</a>
+              <a class="nav-link text-dark" href="./pages/categorias.html"
+                >Categorías</a
+              >
             </li>
           </ul>
-          <!-- barra para buscar/filtrar -->
-          <form class="form-inline my-2 my-lg-0 ml-3">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Buscar
-            </button>
+          <!-- Barra de búsqueda -->
+          <form class="form-inline my-2 my-lg-0 ml-lg-3 text-dark">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Buscar tu auto"
+                aria-label="Buscar tu auto"
+              />
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon1"
+                  ><i class="fas fa-search"></i
+                ></span>
+              </div>
+            </div>
           </form>
         </div>
       </nav>
     </header>
+    <main class="container">
+      <section id="about-us" class="my-5">
+        <h2 class="text-center fs-1 mb-4">Sobre Nosotros</h2>
+        <p class="text-center fs-5 mb-4">
+          En AutoXpress, creemos que la compra de un vehículo debe ser tan
+          emocionante como el momento en que lo conduces por primera vez.
+          Nuestra plataforma fue diseñada por un equipo apasionado de
+          entusiastas del automóvil y expertos en tecnología que comprenden las
+          necesidades de los consumidores modernos. Desde nuestra fundación en
+          2023, nos hemos comprometido a revolucionar el comercio electrónico de
+          vehículos, ofreciendo una experiencia de usuario sin precedentes.
+        </p>
+        <p class="text-center fs-5">
+          Nos enorgullece ofrecer un inventario diverso de vehículos nuevos y
+          usados, desde autos familiares hasta motocicletas deportivas, todo en
+          un solo lugar. Con nuestra innovadora tecnología de comparación y
+          filtrado, encontrar el vehículo perfecto para ti nunca ha sido tan
+          fácil. En AutoXpress, estamos aquí para acompañarte en cada paso del
+          camino hacia tu nueva adquisición.
+        </p>
+      </section>
+
+      <section id="faq" class="my-5 text-center">
+        <h2 class="text-center fs-1 mb-4">Preguntas Frecuentes</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                ¿Qué tipos de vehículos puedo encontrar en AutoXpress?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                En AutoXpress, ofrecemos una amplia gama de vehículos,
+                incluyendo automóviles nuevos y usados, así como motocicletas.
+                Nuestra plataforma facilita la búsqueda de cualquier tipo de
+                vehículo que necesites.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                ¿Cómo puedo comparar diferentes vehículos?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Nuestra plataforma cuenta con herramientas de comparación que te
+                permiten ver las características y precios de varios vehículos
+                lado a lado, facilitando tu decisión de compra.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                ¿Ofrecen financiamiento para la compra de vehículos?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Sí, colaboramos con diversas entidades financieras para ofrecer
+                opciones de financiamiento flexibles que se adapten a tus
+                necesidades y presupuesto.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                ¿Cómo puedo contactar al servicio al cliente?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Puedes contactarnos a través de nuestro formulario en línea, por
+                correo electrónico o llamando a nuestro número de atención al
+                cliente. Estamos aquí para ayudarte en lo que necesites.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Bootcamp CILSA Fullstack</p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li class="mx-3"><strong>Ernesto A. Cevasco</strong></li>
+            <li class="mx-3"><strong>David Campo</strong></li>
+            <li class="mx-3"><strong>Celena Moscovich</strong></li>
+            <li class="mx-3"><strong>Gonzalo Palomo</strong></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <p>&copy; 2024 AutoXpress. Todos los derechos reservados.</p>
+          <ul class="list-unstyled d-flex justify-content-center mb-0">
+            <li class="mx-3">
+              <a href="#"><i class="fab fa-facebook fa-2x text-white"></i></a>
+            </li>
+            <li class="mx-3">
+              <a href="#"><i class="fab fa-twitter fa-2x text-white"></i></a>
+            </li>
+            <li class="mx-3">
+              <a href="#"><i class="fab fa-instagram fa-2x text-white"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
