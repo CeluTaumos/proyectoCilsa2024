@@ -39,6 +39,7 @@ h5 {
 /*NAVBAR*/
 .navbar {
   background: none !important;
+  border-radius: 0 0 10px 10px;
 }
 
 .navbar-brand img {

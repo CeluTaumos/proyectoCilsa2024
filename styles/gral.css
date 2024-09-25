@@ -1,9 +1,13 @@
+html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+
+body {
   background-image: url("../assets/img/fondo.jpg");
   background-size: cover;
   background-position: center;
@@ -14,40 +18,55 @@ body {
   flex: 1;
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
-  background-color: #f1f1f1;
-  color: #6c757d;
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+
+  color: rgb(124, 124, 124);
   width: 100%;
   text-align: center;
-  padding: 0.625em 0;
+  padding: 10px 0;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
+footer a {
+  color: rgb(124, 124, 124);
+}
+h1 h2 h3 h4 h5 {
   font-family: "Rubik", sans-serif;
 }
-
+/*NAVBAR*/
 /*NAVBAR*/
 .navbar {
-  background: #e0eafcb0 !important;
-  background: -webkit-linear-gradient(
-    to right,
-    #cfdef394,
-    #e0eafc88
-  ) !important;
-  background: linear-gradient(to right, #cfdef38c, #e0eafc9a) !important;
-  border-radius: 0 0 0.625em 0.625em;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  border-radius: 0 0 10px 10px;
 }
 
 .navbar-brand img {
   max-height: 3.125em;
 }
+.main-content {
+  animation: fadeIn 2s ease-in-out;
+}
 
-/* BOTONES*/
+.main-title {
+  animation: zoomIn 1s ease-in-out;
+}
+
+.main-slogan,
+.sub-slogan {
+  color: #fff2f2;
+  animation: fadeInUp 1.5s ease-in-out;
+}
 .btn-black {
   background: #0f2027 !important;
   background: -webkit-linear-gradient(
@@ -59,7 +78,7 @@ h5 {
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027) !important;
   color: #fff !important;
   border-radius: 0.625em 0.313em;
-  transition: 0.7s ease, color 0.7s ease;
+  transition: background 0.7s ease, color 0.7s ease;
 }
 
 .btn-black:hover {
@@ -67,25 +86,7 @@ h5 {
   background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7) !important;
   background: linear-gradient(to right, #2c3e50, #bdc3c7) !important;
   color: #fff !important;
-  transition: 0.7s ease, color 0.7s ease;
 }
-
-footer {
-  background: #e0eafc !important;
-  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc) !important;
-  background: linear-gradient(to right, #cfdef3, #e0eafc) !important;
-  color: #6c757d;
-}
-
-footer p,
-footer a {
-  color: #6c757d;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
