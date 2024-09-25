@@ -1,71 +1,118 @@
 body {
-  background: #bdc3c7; 
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
   font-family: "Lato", sans-serif;
+  flex: 1;
 }
 
 footer {
-  background-color: white;
+  background-color: #f1f1f1;
   color: #6c757d;
+  width: 100%;
+  text-align: center;
+  padding: 0.625em 0;
 }
-h1 h2 h3 h4 h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Poppins", sans-serif;
 }
+
 /*NAVBAR*/
 .navbar {
-  background-color: #6c757d;
+  background: #e0eafcb0 !important;
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef394,
+    #e0eafc88
+  ) !important;
+  background: linear-gradient(to right, #cfdef38c, #e0eafc9a) !important;
+  border-radius: 0 0 0.625em 0.625em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .navbar-brand img {
-  max-height: 50px;
+  max-height: 3.125em;
 }
 
-.nav-link {
-  color: white;
-}
-
-.nav-link:hover {
-  color: #ddd;
-}
 /* BOTONES*/
-.btn-info {
-  background-color: rgb(255, 255, 118);
-}
-/* IMG*/
-.logo {
-heigh:3.125em;
-}
-/* CARDS INDEX */
-.custom-card {
-  width: 18rem;
-  border: 2px solid yellow;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.custom-img {
-  filter: grayscale(100%);
-  width: 100%;
+.btn-black {
+  background: #0f2027 !important;
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ) !important;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027) !important;
+  color: #fff !important;
+  border-radius: 0.625em 0.313em;
+  transition: 0.7s ease, color 0.7s ease;
 }
 
-.card-img-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
+.btn-black:hover {
+  background: #bdc3c7 !important;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7) !important;
+  background: linear-gradient(to right, #2c3e50, #bdc3c7) !important;
+  color: #fff !important;
+  transition: 0.7s ease, color 0.7s ease;
 }
 
-.card-text a {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none;
+footer {
+  background: #e0eafc !important;
+  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc) !important;
+  background: linear-gradient(to right, #cfdef3, #e0eafc) !important;
+  color: #6c757d;
 }
 
-.card-text a:hover {
-  color: yellow;
+footer p,
+footer a {
+  color: #6c757d;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
