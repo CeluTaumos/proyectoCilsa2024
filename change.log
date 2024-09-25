@@ -1,0 +1,4 @@
+20240925:
+	- Fix card to have the same size (height)
+	- Indent and fix some lines to have proper alignment in correspondent open/closing tags
+	- Overzrite the card-text style in order to have a maximum amount of lines in order to maintain the structure of the card and avoid overflowing text
