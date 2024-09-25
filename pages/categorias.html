@@ -12,7 +12,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -81,54 +85,209 @@
         </h2>
 
         <!-- Filtros -->
-        <div class="text-center mb-4">
-          <button class="btn btn-black filter-btn" data-filter="todos">
-            Todos
-          </button>
-          <button class="btn btn-black filter-btn" data-filter="autos-nuevos">
-            Autos Nuevos
-          </button>
-          <button class="btn btn-black filter-btn" data-filter="autos-usados">
-            Autos Usados
-          </button>
-          <button class="btn btn-black filter-btn" data-filter="motos-nuevas">
-            Motos Nuevas
-          </button>
-          <button class="btn btn-black filter-btn" data-filter="motos-usadas">
-            Motos Usadas
-          </button>
+        <div class="container mt-2">
+          <div class="text-center mb-4">
+            <button class="btn btn-black filter-btn" data-filter="todos">
+              Todos
+            </button>
+            <button class="btn btn-black filter-btn" data-filter="autos-nuevos">
+              Autos Nuevos
+            </button>
+            <button class="btn btn-black filter-btn" data-filter="autos-usados">
+              Autos Usados
+            </button>
+            <button class="btn btn-black filter-btn" data-filter="motos-nuevas">
+              Motos Nuevas
+            </button>
+            <button class="btn btn-black filter-btn" data-filter="motos-usadas">
+              Motos Usadas
+            </button>
+          </div>
         </div>
-
         <!-- Categorías -->
-        <div class="row" id="productos">
-          <div class="col-md-4 product autos-nuevos">
+        <div class="container ">
+
+         <div class="row" id="productos">
+          <div class=" product autos-nuevos">
             <h3>Autos Nuevos</h3>
-            <ul>
-              <li><a href="producto.html">Auto Nuevo 1</a></li>
-              <li><a href="producto.html">Auto Nuevo 2</a></li>
-            </ul>
-          </div>
-          <div class="col-md-4 product autos-usados">
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/autosNuevos/alfaRomeo.jpg" class="card-img-top" alt="Alfa Romeo">
+                        <div class="card-body">
+                            <h5 class="card-title">Alfa Romeo</h5>
+                            <p class="card-text">Descubre la elegancia y el rendimiento de Alfa Romeo, donde cada modelo combina diseño italiano icónico con tecnología de vanguardia.</p>
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/autosNuevos/maseratiGhibli.jpg" class="card-img-top" alt="Maserati Ghibli">
+                        <div class="card-body">
+                            <h5 class="card-title">Maserati Ghibli</h5>
+                            <p class="card-text">El Maserati Ghibli combina lujo y potencia en una experiencia de conducción excepcional.</p>
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/autosNuevos/MaseratiMC20.jpg" class="card-img-top" alt="Maserati MC20">
+                        <div class="card-body">
+                            <h5 class="card-title">Maserati MC20</h5>
+                            <p class="card-text">El Maserati MC20 es un superdeportivo que redefine la velocidad y el rendimiento.</p>
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="product autos-usados">
             <h3>Autos Usados</h3>
-            <ul>
-              <li><a href="producto.html">Auto Usado 1</a></li>
-              <li><a href="producto.html">Auto Usado 2</a></li>
-            </ul>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/autoUsados/chevroletCorsa.jpg" class="card-img-top" alt="Alfa Romeo">
+                        <div class="card-body">
+                          <h5 class="card-title">Chevrolet Corsa</h5>
+                          <p class="card-text">
+                              El Chevrolet Corsa es conocido por su confiabilidad y eficiencia. 
+                              Con un diseño compacto y una economía de combustible destacada, es la opción ideal para la ciudad y viajes cortos.
+                          </p>
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/autoUsados/renaultClio.jpg" class="card-img-top" alt="Maserati Ghibli">
+                        <div class="card-body">
+                          <h5 class="card-body">Renault Clio</h5>
+                          <p  class="card-title">
+                              El Renault Clio combina estilo y funcionalidad en un solo paquete. 
+                              Su interior espacioso y tecnología avanzada hacen que cada viaje sea cómodo y placentero, perfecto para familias y aventureros.
+                          </p>
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/autoUsados/volkswagenGol.jpg" class="card-img-top" alt="Maserati MC20">
+                        <div class="card-body">
+                          <h5 class="card-title">Volkswagen Gol</h5>
+                          <p class="card-text">
+                              El Volkswagen Gol es un clásico en el segmento de los hatchbacks. 
+                              Con su diseño robusto y motor eficiente, ofrece un rendimiento excepcional y una experiencia de conducción ágil en cualquier entorno.
+                          </p>
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
-          <div class="col-md-4 product motos-nuevas">
+          <div class="product motos-nuevas">
             <h3>Motos Nuevas</h3>
-            <ul>
-              <li><a href="producto.html">Moto Nueva 1</a></li>
-              <li><a href="producto.html">Moto Nueva 2</a></li>
-            </ul>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/motoNuevas/hondaCB125F.jpg" class="card-img-top" alt="honda">
+                        <div class="card-body">
+                          <h5 class="card-title">Honda CB125F</h5>
+                          <p class="card-text">Tipo: Naked/ Cilindrada: 125cc/ Características: Ligera y económica, ideal para principiantes.</p>
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/motoNuevas/KawasakiNinja400.jpg" class="card-img-top" alt="kawasakini">
+                        <div class="card-body">
+                          <h5 class="card-title">Yamaha YZF-R3</h5>
+                          <p class="card-text">Tipo: Deportiva/Cilindrada: 321cc/Características: Diseño aerodinámico y buen rendimiento en pista.</p>
+                   
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/motoNuevas/YamahaYZFR3.jpg" class="card-img-top" alt="yamaha">
+                        <div class="card-body">
+                          <h5 class="card-title">Kawasaki Ninja 400</h5>
+                          <p class="card-text">Tipo: Deportiva/Cilindrada: 399cc/Características: Potente, ágil y fácil de manejar.</p>
+                   
+  
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
-          <div class="col-md-4 product motos-usadas">
+          <div class=" product motos-usadas">
             <h3>Motos Usadas</h3>
-            <ul>
-              <li><a href="producto.html">Moto Usada 1</a></li>
-              <li><a href="producto.html">Moto Usada 2</a></li>
-            </ul>
+            <div class="row">
+              <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/motoUsada/HarleyDavidsonIron883.jpg" class="card-img-top" alt="harley">
+                        <div class="card-body">
+                          <h5 class="card-title">Harley-Davidson Iron 883</h5>
+                          <p class="card-text">Tipo: Cruiser/Cilindrada: 883cc/Características: Diseño clásico y potente motor V-twin.</p>
+                      
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/motoUsada/KTMDuke390.jpg" class="card-img-top" alt="ktmduke">
+                        <div class="card-body">
+                          <h5 class="card-title">Yamaha YZF-R3</h5>
+                          <p class="card-text">Tipo: Deportiva/Cilindrada: 321cc/Características: Diseño aerodinámico y buen rendimiento en pista.</p>
+                     
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 mb-4">
+
+                    <div class="card">
+                        <img src="../assets/img/motoUsada/SuzukiGSX250R.jpg" class="card-img-top" alt="suzuki">
+                        <div class="card-body">
+                          <h5 class="card-title">Suzuki GSX250R</h5>
+                        <p class="card-text">Tipo: Deportiva/Cilindrada: 248cc/Características: Estilo deportivo y motor eficiente.</p>
+                  
+  
+                          
+                            <a href="../pages/producto.html" class="btn btn-dark">ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
           </div>
+      </div>
+  </div>
         </div>
       </div>
     </main>
@@ -148,13 +307,13 @@
           <p>&copy; 2024 AutoXpress. Todos los derechos reservados.</p>
           <ul class="list-unstyled d-flex justify-content-center mb-0">
             <li class="mx-3">
-              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+              <a href="#"><i class="fab fa-facebook fa-2x  text-white"></i></a>
             </li>
             <li class="mx-3">
-              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#"><i class="fab fa-twitter fa-2x  text-white"></i></a>
             </li>
             <li class="mx-3">
-              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+              <a href="#"><i class="fab fa-instagram fa-2x  text-white"></i></a>
             </li>
           </ul>
         </div>
@@ -166,6 +325,11 @@
     ></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/filtros.js"></script>
   </body>

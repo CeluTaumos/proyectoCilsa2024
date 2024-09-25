@@ -4,10 +4,11 @@ body {
   padding: 0;
   display: flex;
   flex-direction: column;
-  background: #bdc3c7;
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
-  background: linear-gradient(to right, #2c3e50, #bdc3c7);
-  color: white;
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+
+  color: rgb(124, 124, 124);
   font-family: "Lato", sans-serif;
   flex: 1;
 }
@@ -32,20 +33,12 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 /*NAVBAR*/
 .navbar {
-  background: #e0eafcb0 !important;
-  background: -webkit-linear-gradient(
-    to right,
-    #cfdef394,
-    #e0eafc88
-  ) !important;
-  background: linear-gradient(to right, #cfdef38c, #e0eafc9a) !important;
-  border-radius: 0 0 0.625em 0.625em;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: none !important;
 }
 
 .navbar-brand img {
@@ -65,6 +58,7 @@ h5 {
   color: #fff !important;
   border-radius: 0.625em 0.313em;
   transition: 0.7s ease, color 0.7s ease;
+  margin: 0.5rem;
 }
 
 .btn-black:hover {
@@ -73,6 +67,9 @@ h5 {
   background: linear-gradient(to right, #2c3e50, #bdc3c7) !important;
   color: #fff !important;
   transition: 0.7s ease, color 0.7s ease;
+}
+main.container {
+  padding-top: 2rem;
 }
 
 footer a:hover {
