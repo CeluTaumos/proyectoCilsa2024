@@ -1,59 +1,101 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-}
 
-body {
+header {
   background-image: url("../assets/img/fondo.jpg");
-  background-size: cover;
+  /* Esta fue otra opcion de foto para background. Pero nada, cualquier va. Solo pensaba en algo mas realista :D */
+  /* background-image: url("../assets/img/fondo3.PNG"); */
+  background-size: calc(100% + 1px) calc(100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: white;
-  font-family: "Lato", sans-serif;
-  flex: 1;
+  /* font-family: "Lato", sans-serif; */
+  /* animation: changeImg 6s ease-in-out infinite; */
+  height: 80vh;
 }
 
+/* Posible animation para el home */
+
+/* @keyframes changeImg {
+  0% {
+    background-image: url("../assets/img/fondo.jpg");
+  }
+  55% {
+    background-image: url("../assets/img/fondo2.PNG");
+  }
+  100% {
+    background-image: url("../assets/img/fondo3.PNG");
+  }
+} */
+
+/*---- STYLES OF HEADER HOMER----- */
+
 .main-content {
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-footer {
-  background: #c9d6ff;
-  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-
-  color: rgb(124, 124, 124);
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
-footer a {
-  color: rgb(124, 124, 124);
-}
 h1 h2 h3 h4 h5 {
   font-family: "Rubik", sans-serif;
 }
-/*NAVBAR*/
-/*NAVBAR*/
-.navbar {
-  background: #c9d6ff;
-  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-  border-radius: 0 0 10px 10px;
+
+
+/*-------STYLE OF HEADER NAVBAR----------*/
+
+.box-navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  li{
+    a{
+      font-size: 1.5rem;
+      color: #f3f3f3;
+    }
+  }
+}
+
+.camp-form{
+  width: 20%;
+}
+
+.section-home{
+  overflow: hidden;
+}
+
+.box-home{
+  width: 50%;
+  margin: 15% 0 0 5%;
+  color: #f3f3f3;
+  line-height: 50px;
+}
+
+h1{
+  font-size: 1rem;
+  font-variant: small-caps;
+}
+
+h2{
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+}
+
+p{
+  font-size: 3rem;
+  margin: 0 0 5% 0;
+}
+
+
+.section-navbar {
+  background: #c7d4ff4d;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar-brand img {
-  max-height: 3.125em;
+  width: 20%;
 }
+
 .main-content {
   animation: fadeIn 2s ease-in-out;
 }
@@ -62,31 +104,6 @@ h1 h2 h3 h4 h5 {
   animation: zoomIn 1s ease-in-out;
 }
 
-.main-slogan,
-.sub-slogan {
-  color: #fff2f2;
-  animation: fadeInUp 1.5s ease-in-out;
-}
-.btn-black {
-  background: #0f2027 !important;
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ) !important;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027) !important;
-  color: #fff !important;
-  border-radius: 0.625em 0.313em;
-  transition: background 0.7s ease, color 0.7s ease;
-}
-
-.btn-black:hover {
-  background: #bdc3c7 !important;
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7) !important;
-  background: linear-gradient(to right, #2c3e50, #bdc3c7) !important;
-  color: #fff !important;
-}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -107,6 +124,130 @@ h1 h2 h3 h4 h5 {
   }
 }
 
+/*
+********************************************************** */
+
+/*----------STYLE OF MAIN SECTION----------
+SECTION ABOUT US*/
+
+#about-us{
+  background-color:#f3f3f3;
+  height: 100%;
+}
+
+.about-us{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us h3{
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+  padding: 2rem 0 1rem 5%;
+}
+
+.description{
+  width: 100%;
+  padding: 5% 10% 10% 10%;
+  p{
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+.card-description{
+  display:flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card-subtitle span{
+  font-style: italic;
+}
+
+
+/*----------STYLE OF MAIN SECTION----------
+SECTION QUESTIONS*/
+
+#questions h3{
+  font-size: 4.5rem;
+  font-weight: bold;
+  letter-spacing: 10px;
+  padding: 2rem 0 1rem 5%;
+}
+
+.section-acordion{
+  width: 50%;
+  margin: 1rem auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.accordion-item{
+  margin: 3rem 0;
+  padding: 1rem 0;
+  border-bottom: 2px solid #9facd64d ;
+}
+
+.accordion-body p{
+  font-size: 1.5rem;
+}
+
+.accordion button{
+  background: none;
+  border: 0;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
+
+
+.accordion-button::after {
+  content: '\25be';
+  transform: rotate(0deg);
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button.collapsed::after {
+  content: '\25b8';
+  transform: rotate(90deg);
+}
+
+
+/*
+Estuve buscando estas class en las diferentes pages. Pero no logre ubicarla.
+.main-slogan,
+.sub-slogan {
+  color: #fff2f2;
+  animation: fadeInUp 1.5s ease-in-out;
+} */
+
+
+.btn-black {
+  background: #0f2027 !important;
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ) !important;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027) !important;
+  color: #fff !important;
+  border-radius: 0.625em 0.313em;
+  transition: background 0.7s ease, color 0.7s ease;
+}
+
+.btn-black:hover {
+  background: #bdc3c7 !important;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7) !important;
+  background: linear-gradient(to right, #2c3e50, #bdc3c7) !important;
+  color: #fff !important;
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -116,4 +257,20 @@ h1 h2 h3 h4 h5 {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+
+/*-----------STYLE OF FOOTER----------------------*/
+
+footer {
+  background: #c9d6ff;
+  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  color: rgb(124, 124, 124);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+footer a {
+  color: rgb(124, 124, 124);
 }
