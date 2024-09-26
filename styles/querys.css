@@ -2,6 +2,10 @@
 
 @media screen and (min-width: 360px) and (max-width: 768px) {
 
+    header {
+        height: 90vh;
+    }
+
 .section-navbar a{
     margin: 0 0 0 35%;
 }
@@ -55,4 +59,39 @@ p{
     font-size: 1.5rem;
     margin: 0 0 1rem 0;
 }
+
+
+/* About section */
+
+.about-us h3{
+    font-size: 3.5rem;
+}
+
+.description{
+    width: 100%;
+        p{
+            font-size: .9rem;
+            width: 100%;
+    }
+}
+
+/* Questions section */
+
+#questions h3{
+    font-size: 3rem;
+}
+
+.section-acordion{
+    width: 100%;
+}
+
+.accordion-item{
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+}
+
+.accordion-body p{
+    font-size: 1rem;
+}
+
 }

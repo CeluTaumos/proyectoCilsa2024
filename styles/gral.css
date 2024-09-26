@@ -1,3 +1,4 @@
+/*---- STYLES OF HEADER HOMER----- */
 
 header {
   background-image: url("../assets/img/fondo.jpg");
@@ -26,19 +27,9 @@ header {
   }
 } */
 
-/*---- STYLES OF HEADER HOMER----- */
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 h1 h2 h3 h4 h5 {
   font-family: "Rubik", sans-serif;
 }
-
 
 /*-------STYLE OF HEADER NAVBAR----------*/
 
@@ -67,6 +58,13 @@ h1 h2 h3 h4 h5 {
   margin: 15% 0 0 5%;
   color: #f3f3f3;
   line-height: 50px;
+}
+
+.buttom-home{
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+
 }
 
 h1{
