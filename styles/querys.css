@@ -1,10 +1,10 @@
 /* section header navbar */
+/* VERSION MOBILE */
+@media screen and (min-width: 360px) and (max-width: 767px) {
 
-@media screen and (min-width: 360px) and (max-width: 768px) {
-
-    header {
-        height: 90vh;
-    }
+header {
+    height: 90vh;
+}
 
 .section-navbar a{
     margin: 0 0 0 35%;
@@ -21,7 +21,6 @@
     align-items: center;
     gap: .2rem;
 }
-
 
 .nav-icon{
         border: 2px solid rgb(208, 213, 225);
@@ -60,7 +59,6 @@ p{
     margin: 0 0 1rem 0;
 }
 
-
 /* About section */
 
 .about-us h3{
@@ -73,6 +71,10 @@ p{
             font-size: .9rem;
             width: 100%;
     }
+}
+
+.box-img{
+    margin: 1rem 0;
 }
 
 /* Questions section */
@@ -92,6 +94,93 @@ p{
 
 .accordion-body p{
     font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
 }
 
+/* VERSION TABLET*/
+/* @media screen and (min-width: 768px) and (max-width: 1020px){}
+
+
+/* PANTALLAS GRANDE */
+@media screen and (min-width: 1380px) and (max-width: 2560px) {
+    /* HOME SECTION */
+.box-navbar{
+    li{
+        a{
+            font-size: 1.2rem;
+        }
+    }
 }
+.navbar-brand img {
+    width: 30%;
+}
+
+.camp-form{
+    width: 40%;
+}
+
+.box-home{
+    width: 60%;
+    margin: 15% 0 0 5%;
+}
+
+h1{
+    font-size: 1.5rem;
+    font-variant: small-caps;
+}
+
+h2{
+    font-size: 5rem;
+}
+
+p{
+    font-size: 3.5rem;
+}
+
+/* ABOUT SECTION */
+
+.about-us h3{
+    font-size: 5rem;
+    padding: 1rem 0 .5rem 5%;
+}
+
+.description{
+    p{
+        font-size: .9rem;
+    }
+}
+
+.box-img img{
+    height: 25vh;
+}
+
+    /* QUESTIONS ABOUT */
+
+#questions{
+    height: 100%;
+}
+
+#questions h3{
+    font-size: 5rem;
+}
+
+.section-acordion{
+    width: 60%;
+}
+
+.accordion-item{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-bottom: 2px solid #9facd64d ;
+}
+
+.accordion-body p{
+    font-size: 1.1rem;
+}
+
+
+
+}
+
