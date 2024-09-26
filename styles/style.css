@@ -1,15 +1,16 @@
+/* VERSION LAPTO */
 /*---- STYLES OF HEADER HOMER----- */
 
 header {
   background-image: url("../assets/img/fondo.jpg");
   /* Esta fue otra opcion de foto para background. Pero nada, cualquier va. Solo pensaba en algo mas realista :D */
   /* background-image: url("../assets/img/fondo3.PNG"); */
-  background-size: calc(100% + 1px) calc(100%);
+  background-size: calc(100%) calc(100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* animation: changeImg 6s ease-in-out infinite; */
-  height: 80vh;
+  height: 85vh;
 }
 
 /* Posible animation para el home */
@@ -29,41 +30,51 @@ header {
 h1 h2 h3 h4 h5 {
   font-family: "Rubik", sans-serif;
 }
-
 /*-------STYLE OF HEADER NAVBAR----------*/
+
+#navbarNav{
+  width: 100%;
+  margin: 0 15% 0 0;
+}
 
 .box-navbar{
   display: flex;
-  justify-content: space-between;
-  width: 80%;
+  justify-content: space-around;
+  width: 100%;
   li{
     a{
-      font-size: 1.5rem;
+      font-size: 1rem;
       color: #f3f3f3;
     }
   }
 }
 
-.camp-form{
-  width: 20%;
+.section-navbar {
+  background: #c7d4ff4d;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 
-.section-home{
-  overflow: hidden;
+.navbar-brand img {
+  width: 30%;
+}
+
+.camp-form{
+  width: 50%;
 }
 
 .box-home{
   width: 50%;
-  margin: 15% 0 0 5%;
+  margin: 10% 0 0 5%;
   color: #f3f3f3;
-  line-height: 50px;
 }
 
 .buttom-home{
   display: flex;
   width: 50%;
+  margin: 5% 0;
   justify-content: space-evenly;
-
 }
 
 h1{
@@ -72,25 +83,13 @@ h1{
 }
 
 h2{
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 10px;
 }
 
 p{
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0 0 5% 0;
-}
-
-
-.section-navbar {
-  background: #c7d4ff4d;
-  display: flex;
-  justify-content: space-around;
-}
-
-.navbar-brand img {
-  width: 20%;
 }
 
 .main-content {
@@ -121,9 +120,6 @@ p{
   }
 }
 
-/*
-********************************************************** */
-
 /*----------STYLE OF MAIN SECTION----------
 SECTION ABOUT US*/
 
@@ -139,7 +135,7 @@ SECTION ABOUT US*/
 }
 
 .about-us h3{
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
   letter-spacing: 10px;
   padding: 2rem 0 1rem 5%;
@@ -147,9 +143,9 @@ SECTION ABOUT US*/
 
 .description{
   width: 100%;
-  padding: 5% 10% 10% 10%;
+  padding: 5% 10%;
   p{
-    font-size: 1rem;
+    font-size: .8rem;
     width: 100%;
   }
 }
@@ -157,7 +153,7 @@ SECTION ABOUT US*/
 .card-description{
   display:flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .card-subtitle span{
@@ -166,9 +162,11 @@ SECTION ABOUT US*/
 
 .box-img{
   border-radius: 10px;
+  width: 100%;
+  min-height: 100%;
 }
 
-.box-img img{ 
+.box-img img{
   width: 100%;
   height: 30vh;
   object-fit: cover;
@@ -178,14 +176,14 @@ SECTION ABOUT US*/
 SECTION QUESTIONS*/
 
 #questions h3{
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 5px;
   padding: 2rem 0 1rem 5%;
 }
 
 .section-acordion{
-  width: 50%;
+  width: 70%;
   margin: 1rem auto;
   padding: 2rem;
   text-align: left;
@@ -198,7 +196,9 @@ SECTION QUESTIONS*/
 }
 
 .accordion-body p{
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: .5rem 0;
+  width: 70%;
 }
 
 .accordion button{
