@@ -32,17 +32,17 @@ h1 h2 h3 h4 h5 {
 }
 /*-------STYLE OF HEADER NAVBAR----------*/
 
-#navbarNav{
+#navbarNav {
   width: 100%;
   margin: 0 15% 0 0;
 }
 
-.box-navbar{
+.box-navbar {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  li{
-    a{
+  li {
+    a {
       font-size: 1rem;
       color: #f3f3f3;
     }
@@ -60,34 +60,34 @@ h1 h2 h3 h4 h5 {
   width: 30%;
 }
 
-.camp-form{
+.camp-form {
   width: 50%;
 }
 
-.box-home{
+.box-home {
   width: 50%;
   margin: 10% 0 0 5%;
   color: #f3f3f3;
 }
 
-.buttom-home{
+.buttom-home {
   display: flex;
   width: 50%;
   margin: 5% 0;
   justify-content: space-evenly;
 }
 
-h1{
+h1 {
   font-size: 1rem;
   font-variant: small-caps;
 }
 
-h2{
+h2 {
   font-size: 4rem;
   font-weight: bold;
 }
 
-p{
+p {
   font-size: 2.5rem;
   margin: 0 0 5% 0;
 }
@@ -123,50 +123,50 @@ p{
 /*----------STYLE OF MAIN SECTION----------
 SECTION ABOUT US*/
 
-#about-us{
-  background-color:#f3f3f3;
+#about-us {
+  background-color: #f3f3f3;
   height: 100%;
 }
 
-.about-us{
+.about-us {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.about-us h3{
+.about-us h3 {
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 10px;
   padding: 2rem 0 1rem 5%;
 }
 
-.description{
+.description {
   width: 100%;
   padding: 5% 10%;
-  p{
-    font-size: .8rem;
+  p {
+    font-size: 0.8rem;
     width: 100%;
   }
 }
 
-.card-description{
-  display:flex;
+.card-description {
+  display: flex;
   justify-content: center;
   gap: 1rem;
 }
 
-.card-subtitle span{
+.card-subtitle span {
   font-style: italic;
 }
 
-.box-img{
+.box-img {
   border-radius: 10px;
   width: 100%;
   min-height: 100%;
 }
 
-.box-img img{
+.box-img img {
   width: 100%;
   height: 30vh;
   object-fit: cover;
@@ -175,33 +175,33 @@ SECTION ABOUT US*/
 /*----------STYLE OF MAIN SECTION----------
 SECTION QUESTIONS*/
 
-#questions h3{
+#questions h3 {
   font-size: 4rem;
   font-weight: bold;
   letter-spacing: 5px;
   padding: 2rem 0 1rem 5%;
 }
 
-.section-acordion{
+.section-acordion {
   width: 70%;
   margin: 1rem auto;
   padding: 2rem;
   text-align: left;
 }
 
-.accordion-item{
+.accordion-item {
   margin: 3rem 0;
   padding: 1rem 0;
-  border-bottom: 2px solid #9facd64d ;
+  border-bottom: 2px solid #9facd64d;
 }
 
-.accordion-body p{
+.accordion-body p {
   font-size: 1rem;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
   width: 70%;
 }
 
-.accordion button{
+.accordion button {
   background: none;
   border: 0;
   color: inherit;
@@ -211,18 +211,16 @@ SECTION QUESTIONS*/
   padding: 0;
 }
 
-
 .accordion-button::after {
-  content: '\25be';
+  content: "\25be";
   transform: rotate(0deg);
   transition: transform 0.2s ease-in-out;
 }
 
 .accordion-button.collapsed::after {
-  content: '\25b8';
+  content: "\25b8";
   transform: rotate(90deg);
 }
-
 
 /*
 Estuve buscando estas class en las diferentes pages. Pero no logre ubicarla.
@@ -231,7 +229,6 @@ Estuve buscando estas class en las diferentes pages. Pero no logre ubicarla.
   color: #fff2f2;
   animation: fadeInUp 1.5s ease-in-out;
 } */
-
 
 .btn-black {
   background: #0f2027 !important;
@@ -265,7 +262,6 @@ Estuve buscando estas class en las diferentes pages. Pero no logre ubicarla.
   }
 }
 
-
 /*-----------STYLE OF FOOTER----------------------*/
 
 footer {
@@ -279,4 +275,8 @@ footer {
 }
 footer a {
   color: rgb(124, 124, 124);
+}
+
+.gap-3 {
+  gap: 1.5625em;
 }
