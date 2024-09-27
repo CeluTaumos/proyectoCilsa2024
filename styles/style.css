@@ -1,35 +1,19 @@
 /* VERSION LAPTO */
 /*---- STYLES OF HEADER HOMER----- */
 
-header {
+#header {
   background-image: url("../assets/img/fondo.jpg");
-  /* Esta fue otra opcion de foto para background. Pero nada, cualquier va. Solo pensaba en algo mas realista :D */
-  /* background-image: url("../assets/img/fondo3.PNG"); */
   background-size: calc(100%) calc(100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* animation: changeImg 6s ease-in-out infinite; */
   height: 85vh;
 }
-
-/* Posible animation para el home */
-
-/* @keyframes changeImg {
-  0% {
-    background-image: url("../assets/img/fondo.jpg");
-  }
-  55% {
-    background-image: url("../assets/img/fondo2.PNG");
-  }
-  100% {
-    background-image: url("../assets/img/fondo3.PNG");
-  }
-} */
 
 h1 h2 h3 h4 h5 {
   font-family: "Rubik", sans-serif;
 }
+
 /*-------STYLE OF HEADER NAVBAR----------*/
 
 #navbarNav {
@@ -72,9 +56,22 @@ h1 h2 h3 h4 h5 {
 
 .buttom-home {
   display: flex;
+  gap: 2rem;
   width: 50%;
-  margin: 5% 0;
-  justify-content: space-evenly;
+  margin: 3% 0;
+  a{
+      text-decoration: none;
+      color: #f3f3f3;
+      border: 1px solid #f3f3f3;
+      padding: .8rem;
+      font-size: .8rem;
+  }
+}
+
+.btn-home:hover{
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  color: #fff;
+  transition: .5s ease-in-out;
 }
 
 h1 {
@@ -222,35 +219,6 @@ SECTION QUESTIONS*/
   transform: rotate(90deg);
 }
 
-/*
-Estuve buscando estas class en las diferentes pages. Pero no logre ubicarla.
-.main-slogan,
-.sub-slogan {
-  color: #fff2f2;
-  animation: fadeInUp 1.5s ease-in-out;
-} */
-
-.btn-black {
-  background: #0f2027 !important;
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ) !important;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027) !important;
-  color: #fff !important;
-  border-radius: 0.625em 0.313em;
-  transition: background 0.7s ease, color 0.7s ease;
-}
-
-.btn-black:hover {
-  background: #bdc3c7 !important;
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7) !important;
-  background: linear-gradient(to right, #2c3e50, #bdc3c7) !important;
-  color: #fff !important;
-}
-
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -262,21 +230,4 @@ Estuve buscando estas class en las diferentes pages. Pero no logre ubicarla.
   }
 }
 
-/*-----------STYLE OF FOOTER----------------------*/
 
-footer {
-  background: #c9d6ff;
-  background: -webkit-linear-gradient(to right, #e2e2e2, #c9d6ff);
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
-  color: rgb(124, 124, 124);
-  width: 100%;
-  text-align: center;
-  padding: 10px 0;
-}
-footer a {
-  color: rgb(124, 124, 124);
-}
-
-.gap-3 {
-  gap: 1.5625em;
-}

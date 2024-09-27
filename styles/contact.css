@@ -1,0 +1,22 @@
+.container-contact{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto, auto, auto;
+}
+
+
+/*-----------STYLE OF FOOTER----------------------*/
+
+.footer{
+    display: flex;
+}
+
+.footer p{
+    font-size: 1.5rem;
+}
+footer {
+    color: rgb(124, 124, 124);
+}
+footer a {
+    color: rgb(124, 124, 124);
+}

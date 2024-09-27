@@ -180,6 +180,24 @@ p{
     font-size: 1.1rem;
 }
 
+/* SECTION CATEGORIES */
+
+.box-cars img{
+    width: 100%;
+    margin: auto;
+    height: 25vh;
+    object-fit: contain;
+}
+
+.box-card-cars{
+    margin: auto;
+    width: 100%;
+    background-color: red;
+    height: 55vh;
+    border-radius: 15px;
+}
+
+
 
 
 }

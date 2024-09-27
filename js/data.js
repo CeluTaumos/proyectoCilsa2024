@@ -26,14 +26,16 @@ async function populateVehicles(condition, vehicle) {
 
         // Create the card structure for each car
         const card = `
-            <div class="card h-100">
+        <article class="box-card-cars">
+            <div class="card box-cars">
                 <img src="${car.image}" class="card-img-top" alt="${car.title}">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">${car.title}</h5>
+                <div class="card-body d-flex flex-column body-cars">
+                    <h4 class="card-title">${car.title}</h4>
                     <p class="card-text">${car.description}</p>
                     <a href="${car.link}" class="mt-auto btn btn-dark">Ver más</a>
                 </div>
             </div>
+        </article>
         `;
 
         // Add the card content to the column

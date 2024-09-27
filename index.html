@@ -9,8 +9,8 @@
   <!-- CCS STYLES -->
   <link rel="stylesheet" href="./styles/style.css" />
   <link rel="stylesheet" href="./styles/generales.css">
-        <!-- QUERYS CCS STYLES -->
-        <link rel="stylesheet" href="./styles//querys.css">
+  <!-- QUERYS CCS STYLES -->
+  <link rel="stylesheet" href="./styles//querys.css">
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +21,15 @@
     rel="stylesheet" />
   <title>AutoXpress - Tienda Online de Vehículos</title>
 </head>
+
 <body>
   <!-- Header -->
-  <header>
+  <header id="header">
     <section class="navbar navbar-expand-lg section-navbar">
-          <!-- logo en nav -->
-      <a class="navbar-brand" href="index.html"><img src="./source/logofinal.png" alt="logo AutoXpress" class="img-fluid logo"/><a>
-                  <!-- Menu de navegacion -->
+      <!-- logo en nav -->
+      <a class="navbar-brand" href="index.html"><img src="./source/logofinal.png" alt="logo AutoXpress"
+          class="img-fluid logo" /><a>
+          <!-- Menu de navegacion -->
           <nav class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav box-navbar">
               <li class="nav-item active">
@@ -37,10 +39,10 @@
                 <a class="nav-link" href="#about-us">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/categorias.html">Categorías</a>
+                <a class="nav-link" href="/pages/categorias.html">Categorías</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/contact.html">Contacto</a>
+                <a class="nav-link" href="/pages/contact.html">Contacto</a>
               </li>
             </ul>
           </nav>
@@ -62,106 +64,108 @@
       <h1 class="fw-bold">AutoXpress</h1>
       <h2 class="text-uppercase fw-bolder main-content">Tu próximo auto</h2>
       <p class="main-title">Más cerca de lo que crees</p>
-      
-    
-
-  <div class="d-flex justify-content-start mt-3 gap-3">
- 
-    <a type="button" class="btn btn-black" href="./pages/categorias.html">
-      Más información
-    </a>
-    
-
-    <button class="btn btn-primary disabled" disabled>Contáctanos</button>
-  </div>
+      <div class="d-flex gap-3 buttom-home">
+        <a type="button" class="btn-home" href="./pages/categorias.html">
+          Más información
+        </a>
+        <a type="button" class="btn-home" href="./pages/contact.html">Contáctanos</a>
+      </div>
     </section>
-    
   </header>
   <!-- Main-->
   <!-- SECTION HOME -->
   <main class="section-home">
-  <!-- SECTION ABOUT US -->
-  <section id="about-us">
-    <section class="about-us">
-    <h3>Sobre Nosotros</h3>
-    <section class="description">
-      <article class="card-description">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col box-card">
-            <div class="card box-img">
-              <img src="./assets/img//quienesSomos/firstcard.PNG" class="card-img-top" alt="...">
-              <div class="card-body card-subtitle">
-                <h4 class="card-title">En AutoXpress <span>Creemos...</span></h4>
-                <p class="card-text">Que la compra de un vehículo debe ser tan
-                  emocionante como el momento en que lo conduces por primera vez.
-                  Nuestra plataforma fue diseñada por un equipo apasionado de
-                  entusiastas del automóvil y expertos en tecnología que comprenden las
-                  necesidades de los consumidores modernos. Desde nuestra fundación en
-                  2023, nos hemos comprometido a revolucionar el comercio electrónico de
-                  vehículos, ofreciendo una experiencia de usuario sin precedentes.</p>
+    <!-- SECTION ABOUT US -->
+    <section id="about-us">
+      <section class="about-us">
+        <h3>Sobre Nosotros</h3>
+        <section class="description">
+          <article class="card-description">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col box-card">
+                <div class="card box-img">
+                  <img src="./assets/img//quienesSomos/firstcard.PNG" class="card-img-top" alt="...">
+                  <div class="card-body card-subtitle">
+                    <h4 class="card-title">En AutoXpress <span>Creemos...</span></h4>
+                    <p class="card-text">Que la compra de un vehículo debe ser tan
+                      emocionante como el momento en que lo conduces por primera vez.
+                      Nuestra plataforma fue diseñada por un equipo apasionado de
+                      entusiastas del automóvil y expertos en tecnología que comprenden las
+                      necesidades de los consumidores modernos. Desde nuestra fundación en
+                      2023, nos hemos comprometido a revolucionar el comercio electrónico de
+                      vehículos, ofreciendo una experiencia de usuario sin precedentes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col box-card">
+                <div class="card box-img">
+                  <img src="./assets/img//quienesSomos/secondcard.PNG" class="card-img-top" alt="...">
+                  <div class="card-body card-subtitle">
+                    <h4 class="card-title">En AutoXpress <span>Nos enorgullece...</span></h4>
+                    <p class="card-text">Ofrecer un inventario diverso de vehículos nuevos y
+                      usados, desde autos familiares hasta motocicletas deportivas, todo en
+                      un solo lugar. Con nuestra innovadora tecnología de comparación y
+                      filtrado, encontrar el vehículo perfecto para ti nunca ha sido tan
+                      fácil. En AutoXpress, estamos aquí para acompañarte en cada paso del
+                      camino hacia tu nueva adquisición.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col box-card">
+                <div class="card box-img">
+                  <img src="./assets/img//quienesSomos/thcard.PNG" class="card-img-top" alt="...">
+                  <div class="card-body card-subtitle">
+                    <h4 class="card-title">En AutoXpress <span>nos impulsa...</span></h4>
+                    <p class="card-text">La innovación y el compromiso con la satisfacción del cliente. Creemos que cada
+                      cliente merece una experiencia de compra personalizada y transparente, sin complicaciones. Con una
+                      interfaz intuitiva y un proceso de compra simplificado, nuestro objetivo es poner el control en
+                      manos del comprador, brindándole todas las herramientas y la información que necesita para tomar
+                      decisiones con confianza. Transformamos la manera en que se compran y venden vehículos, haciendo
+                      que cada paso sea más fácil, rápido y seguro.</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col box-card">
-            <div class="card box-img">
-              <img src="./assets/img//quienesSomos/secondcard.PNG" class="card-img-top" alt="...">
-              <div class="card-body card-subtitle">
-                <h4 class="card-title">En AutoXpress <span>Nos enorgullece...</span></h4>
-                <p class="card-text">Ofrecer un inventario diverso de vehículos nuevos y
-                  usados, desde autos familiares hasta motocicletas deportivas, todo en
-                  un solo lugar. Con nuestra innovadora tecnología de comparación y
-                  filtrado, encontrar el vehículo perfecto para ti nunca ha sido tan
-                  fácil. En AutoXpress, estamos aquí para acompañarte en cada paso del
-                  camino hacia tu nueva adquisición.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col box-card">
-            <div class="card box-img">
-              <img src="./assets/img//quienesSomos/thcard.PNG" class="card-img-top" alt="...">
-              <div class="card-body card-subtitle">
-                <h4 class="card-title">En AutoXpress <span>nos impulsa...</span></h4>
-                <p class="card-text">La innovación y el compromiso con la satisfacción del cliente. Creemos que cada cliente merece una experiencia de compra personalizada y transparente, sin complicaciones. Con una interfaz intuitiva y un proceso de compra simplificado, nuestro objetivo es poner el control en manos del comprador, brindándole todas las herramientas y la información que necesita para tomar decisiones con confianza. Transformamos la manera en que se compran y venden vehículos, haciendo que cada paso sea más fácil, rápido y seguro.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-      </article>
-  </section>
-  </section>
-  </section>
+          </article>
+        </section>
+      </section>
+    </section>
     <!-- SECTION QUESTIONS -->
-<section id="questions">
+    <section id="questions">
       <h3>Preguntas Frecuentes</h3>
       <section class="section-acordion">
         <div class="accordion" id="accordionExample">
           <!-- Pregunta 1 -->
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
                 ¿Qué tipos de vehículos puedo encontrar en AutoXpress?
               </button>
             </h4>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>
                   En AutoXpress, ofrecemos una amplia gama de vehículos,
-                incluyendo automóviles nuevos y usados, así como motocicletas.
-                Nuestra plataforma facilita la búsqueda de cualquier tipo de
-                vehículo que necesites.
+                  incluyendo automóviles nuevos y usados, así como motocicletas.
+                  Nuestra plataforma facilita la búsqueda de cualquier tipo de
+                  vehículo que necesites.
                 </p>
               </div>
             </div>
           </div>
-        <!-- Pregunta 2 -->
+          <!-- Pregunta 2 -->
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 ¿Cómo puedo comparar diferentes vehículos?
               </button>
             </h4>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>Nuestra plataforma cuenta con herramientas de comparación que te
                   permiten ver las características y precios de varios vehículos
@@ -172,11 +176,13 @@
           <!-- Pregunta 3 -->
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                 ¿Ofrecen financiamiento para la compra de vehículos?
               </button>
             </h4>
-            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>Sí, colaboramos con diversas entidades financieras para ofrecer
                   opciones de financiamiento flexibles que se adapten a tus
@@ -187,11 +193,13 @@
           <!-- Pregunta 4 -->
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingFour">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                 ¿Cómo puedo contactar al servicio al cliente?
               </button>
             </h4>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <p>Puedes contactarnos a través de nuestro formulario en línea, por
                   correo electrónico o llamando a nuestro número de atención al
@@ -200,38 +208,9 @@
             </div>
           </div>
         </div>
+      </section>
     </section>
-</section>
   </main>
-
-  <!-- Footer -->
-  <!-- <footer class="text-center py-4">
-      <div class="row">
-        <div class="col-md-6">
-          <p>Bootcamp CILSA Fullstack</p>
-          <ul class="list-unstyled d-flex justify-content-center mb-0">
-            <li class="mx-3"><strong>Ernesto A. Cevasco</strong></li>
-            <li class="mx-3"><strong>David Campo</strong></li>
-            <li class="mx-3"><strong>Celena Moscovich</strong></li>
-            <li class="mx-3"><strong>Gonzalo Palomo</strong></li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <p>&copy; 2024 AutoXpress. Todos los derechos reservados.</p>
-          <ul class="list-unstyled d-flex justify-content-center mb-0">
-            <li class="mx-3">
-              <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-            </li>
-            <li class="mx-3">
-              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-            </li>
-            <li class="mx-3">
-              <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer> -->
 
   <!-- Links de Bootstrap, FontAwesome, etc -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
@@ -239,8 +218,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-  crossorigin="anonymous"></script>
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
