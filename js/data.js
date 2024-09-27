@@ -13,30 +13,30 @@ async function fetchJSONData() {
 }
 
 
-// Function to dynamically populate the car data into the DOM
+// Function to dynamically populate the vehicle data into the DOM
 async function populateVehicles(condition, vehicle) {
-    vehicleData = await fetchJSONData();  // Get the car data from the JSON object
+    vehicleData = await fetchJSONData();  // Get the vehicle data from the JSON object
     let idDiv = "row-" + condition + "-" + vehicle;
     const vehicleContainer = document.getElementById(idDiv);  // Get the container where the cars will be added
 
-    // Loop through each car in the data and create DOM elements
+    // Loop through each vehicle in the data and create DOM elements
     vehicleData[vehicle][condition].forEach(vehicle => {
         console.log(vehicle);
         let encodedVehicle = encodeURIComponent(JSON.stringify(vehicle));
         console.log("enconde: ")
         console.log(encodedVehicle);
-        const colDiv = document.createElement('div');  // Create a new div for each car
+        const colDiv = document.createElement('div');  // Create a new div for each vehicle
         colDiv.classList.add('col-md-4');  // Add Bootstrap classes for layout
 
-        // Create the card structure for each car
+        // Create the card structure for each vehicle
         const card = `
         <article class="box-card-cars">
             <div class="card box-cars">
-                <img src="${car.image}" class="card-img-top" alt="${car.title}">
+                <img src="${vehicle.image}" class="card-img-top" alt="${vehicle.title}">
                 <div class="card-body d-flex flex-column body-cars">
-                    <h4 class="card-title">${car.title}</h4>
-                    <p class="card-text">${car.description}</p>
-                    <a href="${car.link}" class="mt-auto btn btn-dark">Ver más</a>
+                    <h4 class="card-title">${vehicle.title}</h4>
+                    <p class="card-text">${vehicle.description}</p>
+                    <a href="${vehicle.link}" class="mt-auto btn btn-dark">Ver más</a>
                 </div>
             </div>
         </article>
@@ -45,7 +45,7 @@ async function populateVehicles(condition, vehicle) {
         // Add the card content to the column
         colDiv.innerHTML = card;
 
-        // Append the column to the car container
+        // Append the column to the vehicle container
         vehicleContainer.appendChild(colDiv);
     });
 }
