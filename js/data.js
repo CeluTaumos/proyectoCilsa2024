@@ -15,12 +15,16 @@ async function fetchJSONData() {
 
 // Function to dynamically populate the car data into the DOM
 async function populateVehicles(condition, vehicle) {
-    carData = await fetchJSONData();  // Get the car data from the JSON object
+    vehicleData = await fetchJSONData();  // Get the car data from the JSON object
     let idDiv = "row-" + condition + "-" + vehicle;
-    const carContainer = document.getElementById(idDiv);  // Get the container where the cars will be added
+    const vehicleContainer = document.getElementById(idDiv);  // Get the container where the cars will be added
 
     // Loop through each car in the data and create DOM elements
-    carData[vehicle][condition].forEach(car => {
+    vehicleData[vehicle][condition].forEach(vehicle => {
+        console.log(vehicle);
+        let encodedVehicle = encodeURIComponent(JSON.stringify(vehicle));
+        console.log("enconde: ")
+        console.log(encodedVehicle);
         const colDiv = document.createElement('div');  // Create a new div for each car
         colDiv.classList.add('col-md-4');  // Add Bootstrap classes for layout
 
@@ -42,7 +46,7 @@ async function populateVehicles(condition, vehicle) {
         colDiv.innerHTML = card;
 
         // Append the column to the car container
-        carContainer.appendChild(colDiv);
+        vehicleContainer.appendChild(colDiv);
     });
 }
 

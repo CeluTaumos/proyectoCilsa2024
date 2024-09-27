@@ -77,7 +77,15 @@ aria-expanded="false"aria-label="Toggle navigation"><span class="navbar-toggler-
             class="text-uppercase fw-bold text-center"
             style="font-family: 'Rubik', sans-serif; color: #203a43"
           >
-            Harley Davidson 883
+            <script lang="javascript">
+              let queryString = window.location.search;
+              
+              let objectString = queryString.split('=')[1];
+              
+              let decodedObject = JSON.parse(decodeURIComponent(objectString));
+              console.log(decodedObject);
+              decodedObject.title;
+            </script>
           </h3>
           <ul
             class="list-unstyled mt-3"
