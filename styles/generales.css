@@ -5,6 +5,13 @@ h4,
 h5 {
 font-family: "Rubik", sans-serif;
 }
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 
 /* STYLES GENERAL OF NAV */
 #navbarNav {
@@ -16,18 +23,18 @@ font-family: "Rubik", sans-serif;
     display: flex;
     justify-content: space-around;
     width: 100%;
-
     li {
         list-style: none;
         a {
             font-size: 1rem;
-            color: #f3f3f3;
+            color: #0f2027;
+            font-weight: bold;
         }
     }
 }
 
 .section-navbar {
-    background: #c7d4ff4d;
+    background-color: #9294544d;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -42,45 +49,62 @@ font-family: "Rubik", sans-serif;
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
-    .section-navbar a{
-        margin: 0 0 0 35%;
-    }
 
-    .navbar-brand img {
-        width: 50%;
-    }
+.section-navbar button{
+    position: absolute;
+    bottom: 20%;
+    left: 80%;
+}
 
-    .section-navbar {
-        background: rgb(201, 214, 255, 0.30);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .2rem;
-    }
+.navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #0f2027;
+}
 
-    .nav-icon{
-        border: 2px solid rgb(208, 213, 225);
-    }
-
-    .camp-form{
-        display: none;
+.box-navbar {
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    li {
+        a {
+            font-size: 2rem;
+            text-align: center;
+            color: #f3f3f3;
+        }
     }
 }
 
+.navbar-brand img {
+    width: 30%;
+}
+
+.nav-icon{
+    border: 2px solid rgb(208, 213, 225);
+}
+
+.camp-form{
+    display: none;
+}
+
+}
+
 @media screen and (min-width: 1380px) and (max-width: 2560px) {
-    .box-navbar{
-        li{
-            a{
-                font-size: 1.2rem;
-            }
+.box-navbar{
+    li{
+        a{
+            font-size: 1.2rem;
         }
     }
-    .navbar-brand img {
-        width: 30%;
-    }
-    .camp-form{
-        width: 40%;
-    }
+}
+.navbar-brand img {
+    width: 30%;
+}
+.camp-form{
+    width: 40%;
+}
 
 }
 

@@ -1,10 +1,10 @@
 /* SECTION CONTACT */
 .main-contact {
-    background-image: url(/assets/img/bg-img/contac3.PNG);
+    background-image: url(/assets/img/fondo.jpg);
     background-size: calc(100%) calc(100% + 20%);
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 #container-contact {
@@ -14,64 +14,90 @@
 }
 
 .box-form {
-    padding: 2rem;
+    background-color: rgba(11, 26, 36, 0.8);
     height: 100%;
+    width: 45%;
+    padding: 1rem;
+}
+
+.contact-text {
+    padding: 0 0 0 5%;
+    color: #f3f3f3;
+    margin: 0 0 10% 0;
 }
 
 .contact-text h6 {
-    font-size: 150rem;
+    font-size: 4rem;
 }
 
+.main-contact {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.text-form-contact p {
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+
+label {
+    margin: 1% 0;
+    font-size: 1rem;
+    color: #f3f3f3;
+}
+
+
 @media screen and (min-width: 360px) and (max-width: 767px) {
-    .main-contact {
-        flex-direction: column;
-    }
+        .box-form {
+            width: 100%;
+        }
 
-    .text-form-contact p {
-        font-size: 1rem;
-    }
+        .contact-text {
+            padding: 5% 0;
+            margin: 0 0 10% 0;
+        }
 
-    label {
-        margin: 0;
-        font-size: 1.5rem;
-    }
+        .contact-text h6 {
+            font-size: 1.5rem;
+        }
+
+        .main-contact {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .text-form-contact p {
+            font-size: 1rem;
+            color: #f3f3f3;
+        }
+
+        label {
+            margin: 2% 0;
+        }
 }
 
 @media screen and (min-width: 1380px) and (max-width: 2560px) {
     .box-form {
-        background-color: rgba(14, 44, 63, 0.8);
         height: 80%;
         width: 35%;
         padding: 2rem;
-    }
-
-    .contact-text {
-        padding: 0 0 0 5%;
-        color: #f3f3f3;
-        margin: 0 0 10% 0;
     }
 
     .contact-text h6 {
         font-size: 4.5rem;
     }
 
-    .main-contact {
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
     .text-form-contact p {
         font-size: 1rem;
-        color: #f3f3f3;
     }
 
     label {
         margin: 3% 0;
-        font-size: 2rem;
-        color: #f3f3f3;
+        font-size: 1rem;
     }
 }
+
 
 /*-----------STYLE OF FOOTER----------------------*/
 
@@ -97,6 +123,10 @@ footer a {
 
 .footer{
     flex-direction: column;
+}
+
+.footer p {
+    font-size: 1rem;
 }
 
 }

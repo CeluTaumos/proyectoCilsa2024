@@ -1,6 +1,55 @@
+#header-categories{
+  /* background-color: red;
+  background-image: url(/assets/img/fondo3.PNG);
+  background-size: calc(100%) calc(100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 40px; /* Ajusta el ancho del botón */
+  height: 40px; /* Ajusta el alto del botón */
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  border: unset;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px; /* Ajusta el tamaño del icono */
+  height: 20px;
+}
+
+
+.carousel-categories img{
+  height: 80vh;
+  object-fit: cover;
+
+}
+
+
 .main-container{
   padding: 2rem 0;
+  background-color: #dde3e8;
+  width: 100%;
 }
+
+#section-categories{
+  width: 100%;
+}
+
+
+.box-container-cars{
+  padding: 2rem 1rem;
+}
+
+
+.box-container-cars h3{
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 
 .main-container h2 {
   font-size: 2rem;
@@ -13,20 +62,11 @@
   justify-content:space-evenly;
 }
 
-.box-container-cars{
-  padding: 2rem 1rem;
-}
-
-
-.box-container-cars h3{
-  text-align: center;
-  padding: 1.5rem 0;
-}
 
 .box-card-cars{
   margin: auto;
-  width: 80%;
-  height: 80vh;
+  width: 100%;
+  height: 85vh;
   border-radius: 15px;
 }
 
@@ -50,17 +90,9 @@
 
 
 /* BOTONES*/
-/* .btn-black {
-  background: #0f2027;
-  background: -webkit-linear-gradient(
-    to right,
-    #2c5364,
-    #203a43,
-    #0f2027
-  );
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  color: #fff;
-  border-radius: 0.625em 0.313em;
+.btn-black {
+  color: #0f2027;
+  border: 1px solid #0f2027;
   transition: 0.7s ease, color 0.7s ease;
   margin: 0.5rem;
 }
@@ -71,7 +103,7 @@
   background: linear-gradient(to right, #2c3e50, #bdc3c7);
   color: #fff;
   transition: 0.7s ease, color 0.7s ease;
-} */
+}
 
 
 /* QUERYS SECTION CATEGORIES */

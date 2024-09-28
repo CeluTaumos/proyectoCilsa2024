@@ -1,11 +1,12 @@
 /*---- STYLES OF HEADER HOMER----- */
 #header {
-  background-image: url("../assets/img/fondo.jpg");
+  background-image: url("../assets/img/bg-img/contact4.PNG");
   background-size: calc(100%) calc(100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   height: 85vh;
+  overflow: hidden;
 }
 
 h1 h2 h3 h4 h5 {
@@ -24,13 +25,12 @@ h1 h2 h3 h4 h5 {
   gap: 2rem;
   width: 50%;
   margin: 3% 0;
-
   a {
     text-decoration: none;
-    color: #f3f3f3;
-    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+    color: #0f2027;
     padding: .8rem;
-    font-size: .8rem;
+    font-size: 1rem;
   }
 }
 
@@ -200,34 +200,37 @@ p {
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
 
+  #header {
+    background-image: url("../assets/img/bg-img/contact4.PNG");
+    background-size: calc(100% + 20px) calc(80%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 90vh;
+  }
+
   header {
     height: 90vh;
   }
 
   .buttom-home {
     width: 100%;
-
     a {
-      padding: .5rem .5rem;
-      font-size: .8rem;
+      padding: .7rem;
+      font-size: 1rem;
       line-height: 30px;
     }
   }
 
-
-  .section-home {
-    overflow: hidden;
-  }
-
   .box-home {
     width: 100%;
-    margin: 35% 0 0 5%;
+    margin: 50% 0 0 5%;
     color: #f3f3f3;
     line-height: 60px;
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-variant: small-caps;
   }
 
@@ -238,7 +241,7 @@ p {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin: 0 0 1rem 0;
   }
 
