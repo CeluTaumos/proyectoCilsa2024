@@ -26,7 +26,6 @@
 .box-card-cars{
   margin: auto;
   width: 80%;
-  /* background-color: red; */
   height: 80vh;
   border-radius: 15px;
 }
@@ -43,17 +42,15 @@
   height: 100%;
 }
 
-.body-cars{
-  /* background-color: yellow; */
-}
-
 .body-cars p{
   font-size: 1rem;
 }
 
 
+
+
 /* BOTONES*/
-.btn-black {
+/* .btn-black {
   background: #0f2027;
   background: -webkit-linear-gradient(
     to right,
@@ -74,5 +71,26 @@
   background: linear-gradient(to right, #2c3e50, #bdc3c7);
   color: #fff;
   transition: 0.7s ease, color 0.7s ease;
+} */
+
+
+/* QUERYS SECTION CATEGORIES */
+
+@media screen and (min-width: 360px) and (max-width: 767px) {}
+
+
+@media screen and (min-width: 1380px) and (max-width: 2560px) {
+  .box-cars img{
+    width: 100%;
+    margin: auto;
+    height: 25vh;
+    object-fit: contain;
 }
 
+.box-card-cars{
+    margin: auto;
+    width: 100%;
+    height: 55vh;
+    border-radius: 15px;
+}
+}

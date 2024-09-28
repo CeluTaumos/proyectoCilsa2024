@@ -1,0 +1,16 @@
+.description-product{
+    font-size: 1.5rem;
+    margin: .6rem 0;
+}
+
+.nav-producto{
+    color: #f3f3f3;
+}
+
+.menu-product a{
+    color: #f3f3f3!important;
+}
+
+.menu-product h2{
+    font-size: .5rem;
+}

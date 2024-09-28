@@ -6,8 +6,8 @@
       <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
       <!-- CCS STYLES -->
-    <link rel="stylesheet" href="../styles/categorias.css" />
-    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/generales.css" />
+    <link rel="stylesheet" href="../styles/productos.css" />
       <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,14 +17,14 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="bg-dark">
+    <header class="bg-dark menu-product">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="../index.html">
           <img src="../source/logofinal.png" alt="logo AutoXpress" class="img-fluid logo"/></a>
         <button class="navbar-toggler"type="button"data-toggle="collapse"data-target="#navbarNav"aria-controls="navbarNav"
 aria-expanded="false"aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav nav-producto">
             <li class="nav-item active"><a class="nav-link text-dark" href="../index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link text-dark" href="/pages/categorias.html">Categorías</a></li>
             <li class="nav-item"><a class="nav-link text-dark" href="/pages/contact.html">Contacto</a></li>
@@ -43,8 +43,8 @@ aria-expanded="false"aria-label="Toggle navigation"><span class="navbar-toggler-
         </div>
       </nav>
     </header>
-    <main class="container mt-5">
-      <h2 class="text-center fs-1 text-uppercase fw-bold">Detalles del Producto</h2>
+    <main class="container mt-5 main-producto">
+      <h2>Detalles del Producto</h2>
       <div class="row mt-5">
         <div class="col-md-6">
           <div id="carouselExample" class="carousel slide" data-ride="carousel">
@@ -65,7 +65,7 @@ aria-expanded="false"aria-label="Toggle navigation"><span class="navbar-toggler-
               <span class="carousel-control-next-icon"aria-hidden="true"></span>
               <span class="sr-only">Next</span></a>
           </div>
-          <p class="mt-3 fs-2">
+          <p class="description-product">
             La Harley Davidson Iron 883 es una motocicleta clásica con un diseño
             elegante y robusto, ideal para los amantes de las motos
             personalizadas. Su motor V-Twin ofrece una experiencia de conducción
@@ -73,64 +73,19 @@ aria-expanded="false"aria-label="Toggle navigation"><span class="navbar-toggler-
           </p>
         </div>
         <div class="col-md-6">
-          <h3
-            class="text-uppercase fw-bold text-center"
-            style="font-family: 'Rubik', sans-serif; color: #203a43"
-          >
-            Harley Davidson 883
-          </h3>
-          <ul
-            class="list-unstyled mt-3"
-            style="
-              font-family: 'Lato', sans-serif;
-              font-size: 1.2rem;
-              line-height: 1.8;
-              color: rgb(124, 124, 124);
-            "
-          >
-            <li class="mb-2">
-              <strong style="color: #2c5364"
-                ><i class="fas fa-cogs"></i> Motor:</strong
-              >
-              883cc V-Twin
+          <h3 class="text-uppercase fw-bold text-center"
+            style="font-family: 'Rubik', sans-serif; color: #203a43">Harley Davidson 883</h3>
+          <ul class="list-unstyled mt-3"style="font-family: 'Lato', sans-serif;font-size: 1.2rem;line-height: 1.8;color: rgb(124, 124, 124);">
+            <li class="mb-2"><strong style="color: #2c5364"><i class="fas fa-cogs"></i> Motor:</strong>883ccV-Twin</li>
+            <li class="mb-2"><strong style="color: #203a43"><i class="fas fa-horse"></i> Potencia:</strong>49 hp</li>
+            <li class="mb-2"><strong style="color: #0f2027"><i class="fas fa-weight-hanging"></i> Peso:</strong>256 kg</li>
+            <li class="mb-2"><strong style="color: #2c5364"><i class="fas fa-gas-pump"></i> Combustible:</strong>Gasolina
             </li>
-            <li class="mb-2">
-              <strong style="color: #203a43"
-                ><i class="fas fa-horse"></i> Potencia:</strong
-              >
-              49 hp
-            </li>
-            <li class="mb-2">
-              <strong style="color: #0f2027"
-                ><i class="fas fa-weight-hanging"></i> Peso:</strong
-              >
-              256 kg
-            </li>
-            <li class="mb-2">
-              <strong style="color: #2c5364"
-                ><i class="fas fa-gas-pump"></i> Combustible:</strong
-              >
-              Gasolina
-            </li>
-            <li class="mb-2">
-              <strong style="color: #203a43"
-                ><i class="fas fa-car"></i> Suspensión:</strong
-              >
-              Telescópica delantera
-            </li>
-            <li class="mb-2">
-              <strong style="color: #0f2027"
-                ><i class="fas fa-brake"></i> Frenos:</strong
-              >
-              Disco delantero y trasero
-            </li>
-            <li class="mb-2">
-              <strong style="color: #2c5364"
-                ><i class="fas fa-paint-brush"></i> Colores disponibles:</strong
-              >
-              Negro, Gris, Rojo
-            </li>
+            <li class="mb-2"><strong style="color: #203a43"><i class="fas fa-car"></i> Suspensión:</strong>Telescópica delantera</li>
+            <li class="mb-2"><strong style="color: #0f2027"><i class="fas fa-brake"></i> Frenos:</strong>Disco delantero y trasero</li>
+            <li class="mb-2"><strong style="color: #2c5364"><i class="fas fa-paint-brush"></i> Colores disponibles:</strong>Negro, Gris, Rojo</li>
           </ul>
+          <button class="btn btn-dark m-auto">Comprar</button>
         </div>
       </div>
     </main>

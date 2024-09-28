@@ -6,8 +6,81 @@ h5 {
 font-family: "Rubik", sans-serif;
 }
 
-.box-navbar{
-    li{
+/* STYLES GENERAL OF NAV */
+#navbarNav {
+    width: 100%;
+    margin: 0 15% 0 0;
+}
+
+.box-navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+    li {
         list-style: none;
+        a {
+            font-size: 1rem;
+            color: #f3f3f3;
+        }
     }
 }
+
+.section-navbar {
+    background: #c7d4ff4d;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.navbar-brand img {
+    width: 30%;
+}
+
+.camp-form {
+    width: 50%;
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .section-navbar a{
+        margin: 0 0 0 35%;
+    }
+
+    .navbar-brand img {
+        width: 50%;
+    }
+
+    .section-navbar {
+        background: rgb(201, 214, 255, 0.30);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .2rem;
+    }
+
+    .nav-icon{
+        border: 2px solid rgb(208, 213, 225);
+    }
+
+    .camp-form{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1380px) and (max-width: 2560px) {
+    .box-navbar{
+        li{
+            a{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .navbar-brand img {
+        width: 30%;
+    }
+    .camp-form{
+        width: 40%;
+    }
+
+}
+

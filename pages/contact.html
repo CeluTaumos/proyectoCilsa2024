@@ -7,10 +7,9 @@
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <!-- LINK DE CSS -->
-    <link rel="stylesheet" href="/styles/contact.css">
+    <!-- <link rel="stylesheet" href="/styles/contact.css"> -->
     <link rel="stylesheet" href="/styles/generales.css">
-    <link rel="stylesheet" href="/styles/querys.css">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/contact.css">
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,49 +23,87 @@
 
 <body>
     <!-- Header -->
-     <header id="container-contact">
-    <section>
-        <section class="navbar navbar-expand-lg section-navbar bg-dark">
-            <!-- logo en nav -->
-            <a class="navbar-brand" href="/index.html"><img src="/source/logofinal.png" alt="logo AutoXpress"
-                    class="img-fluid logo" /><a>
-                    <!-- Menu de navegacion -->
-                    <nav class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav box-navbar">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/pages/categorias.html">Categorías</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contacto</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon nav-icon"></span>
-                    </button>
-                    <!-- Barra de búsqueda -->
-                    <form class="my-2 my-lg-0 ml-lg-3 text-dark camp-form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Buscar tu auto"
-                                aria-label="Buscar tu auto" />
-                            <div class="input-group-append">
-                                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i><span>
+    <header id="container-contact">
+        <section>
+            <section class="navbar navbar-expand-lg section-navbar bg-dark">
+                <!-- logo en nav -->
+                <a class="navbar-brand" href="/index.html"><img src="/source/logofinal.png" alt="logo AutoXpress"
+                        class="img-fluid logo" /><a>
+                        <!-- Menu de navegacion -->
+                        <nav class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav box-navbar">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="/index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/pages/categorias.html">Comprar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contacto</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon nav-icon"></span>
+                        </button>
+                        <!-- Barra de búsqueda -->
+                        <form class="my-2 my-lg-0 ml-lg-3 text-dark camp-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar tu auto"
+                                    aria-label="Buscar tu auto" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i><span>
+                                </div>
+                            </div>
+                        </form>
+            </section>
+        </section>
+        <main class="main-contact d-flex">
+            <div class="contact-text">
+                <h3 class="fw-bold">AutoXpress</h3>
+                <h6>¿Nuevo aquí? <br>¡Bienvenido!</h6>
+            </div>
+            <form class="container box-form">
+                <div class="form-container my-5">
+                    <form class="form">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="apellido" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" required>
                             </div>
                         </div>
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="nombre@email.com" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+                        <div class="text-form-contact">
+                            <p class="text-center mt-3">Al crear una cuenta, acepta la Política de privacidad
+                                y los Términos y Condiciones</p>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Contáctanos</button>
+                        </div>
+                        <div class="text-form-contact">
+                            <p class="text-center mt-3">¿Ya tienes una cuenta? Iniciar sesión</p>
+                        </div>
                     </form>
-        </section>
-    </section>
-    <main>
-        <form class="text-center" action="">
-            <p class="fs-1">formulario de contacto en construccion</p>
-        </form>
-    </main>
-    <!-- Footer -->
-    <footer class="bg-dark footer">
+                </div>
+            </form>
+        </main>
+        <!-- Footer -->
+        <footer class="bg-dark footer">
             <div class="col-md-6 box-group text-center">
                 <p>Bootcamp CILSA Fullstack</p>
                 <ul class="list-unstyled d-flex justify-content-around">
@@ -84,7 +121,7 @@
                     <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
                 </ul>
             </div>
-    </footer>
+        </footer>
     </header>
 
 
@@ -93,9 +130,9 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script> -->
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
-    <!-- Fetch JSON data for products -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- <Fetch JSON data for products -->
     <script src="../js/data.js" defer></script>
     <script src="../js/filtros.js"></script>
 </body>
