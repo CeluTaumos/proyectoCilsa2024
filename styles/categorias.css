@@ -31,7 +31,7 @@
 
 .main-container{
   padding: 2rem 0;
-  background-color: #dde3e8;
+  background-color: #f3f3f3;
   width: 100%;
 }
 
@@ -68,6 +68,7 @@
   width: 100%;
   height: 85vh;
   border-radius: 15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .box-cars img{
@@ -112,6 +113,10 @@
 
 
 @media screen and (min-width: 1380px) and (max-width: 2560px) {
+
+  .bg-carousel{
+    background-color: #9294544d;
+  }
   .box-cars img{
     width: 100%;
     margin: auto;

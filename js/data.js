@@ -32,7 +32,8 @@ async function populateVehicles(condition, vehicle) {
                 <div class="card-body d-flex flex-column body-cars">
                     <h4 class="card-title">${car.title}</h4>
                     <p class="card-text">${car.description}</p>
-                    <a href="${car.link}" class="mt-auto btn btn-dark">Ver más</a>
+                    <p class="card-text">${car.precio}</p>
+                    <a href="${car.link}" class="mt-auto btn btn-secondary">Ver más</a>
                 </div>
             </div>
         </article>

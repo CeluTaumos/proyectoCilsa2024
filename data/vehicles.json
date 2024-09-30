@@ -54,7 +54,7 @@
             {
                 "title": "Chevrolet Corsa",
                 "description": "El Chevrolet Corsa es conocido por su confiabilidad y eficiencia. Con un diseño compacto y una economía de combustible destacada, es la opción ideal para la ciudad y viajes cortos.",
-                "image": "../assets/img/autoUsados/chevroletCorsa.jpg",
+                "image": "/assets/img/modelos/sinbg/used1.png",
                 "link": "../pages/producto.html",
                 "technicals": {
                     "engine": "Standard Engine",
@@ -70,7 +70,7 @@
             {
                 "title": "Renault Clio",
                 "description": "El Renault Clio combina estilo y funcionalidad en un solo paquete. Su interior espacioso y tecnología avanzada hacen que cada viaje sea cómodo y placentero, perfecto para familias y aventureros.",
-                "image": "../assets/img/autoUsados/renaultClio.jpg",
+                "image": "/assets/img/modelos/sinbg/used1.pngg",
                 "link": "../pages/producto.html",
                 "technicals": {
                     "engine": "Standard Engine",
@@ -86,7 +86,7 @@
             {
                 "title": "Volkswagen Gol",
                 "description": "El Volkswagen Gol es un clásico en el segmento de los hatchbacks. Con su diseño robusto y motor eficiente, ofrece un rendimiento excepcional y una experiencia de conducción ágil en cualquier entorno.",
-                "image": "../assets/img/autoUsados/volkswagenGol.jpg",
+                "image": "/assets/img/modelos/sinbg/used1.png",
                 "link": "../pages/producto.html",
                 "technicals": {
                     "engine": "Standard Engine",
