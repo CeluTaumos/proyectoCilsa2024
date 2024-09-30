@@ -137,66 +137,6 @@ p {
   object-fit: cover;
 }
 
-/*----------SECTION QUESTIONS-------------*/
-
-#questions h3 {
-  font-size: 4rem;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding: 2rem 0 1rem 5%;
-}
-
-.section-acordion {
-  width: 70%;
-  margin: 1rem auto;
-  padding: 2rem;
-  text-align: left;
-}
-
-.accordion-item {
-  margin: 3rem 0;
-  padding: 1rem 0;
-  border-bottom: 2px solid #9facd64d;
-}
-
-.accordion-body p {
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  width: 70%;
-}
-
-.accordion button {
-  background: none;
-  border: 0;
-  color: inherit;
-  font: inherit;
-  line-height: normal;
-  overflow: visible;
-  padding: 0;
-}
-
-.accordion-button::after {
-  content: "\25be";
-  transform: rotate(0deg);
-  transition: transform 0.2s ease-in-out;
-}
-
-.accordion-button.collapsed::after {
-  content: "\25b8";
-  transform: rotate(90deg);
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
 
@@ -263,27 +203,6 @@ p {
   .box-img {
     margin: 1rem 0;
   }
-
-  /* Questions section */
-
-  #questions h3 {
-    font-size: 3rem;
-  }
-
-  .section-acordion {
-    width: 100%;
-  }
-
-  .accordion-item {
-    margin: 1.5rem 0;
-    padding: 1rem 0;
-  }
-
-  .accordion-body p {
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 1380px) and (max-width: 2560px) {
@@ -324,32 +243,31 @@ p {
     height: 25vh;
   }
 
-  /*----------- QUESTIONS------------------- */
-
-  #questions {
-    height: 100%;
-  }
-
-  #questions h3 {
-    font-size: 5rem;
-  }
-
-  .section-acordion {
-    width: 60%;
-  }
-
-  .accordion-item {
-    margin: 1rem 0;
-    padding: 1rem 0;
-    border-bottom: 2px solid #9facd64d;
-  }
-
-  .accordion-body p {
-    font-size: 1.1rem;
-  }
-
 }
 
+
+
+.selected-model {
+  font-weight: bold;
+  color: #007bff;
+  text-transform: uppercase;
+}
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  /* Estilos para tablets y dispositivos medianos */
+  .carousel-item img {
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  /* Estilos para dispositivos móviles */
+  .carousel-item img {
+    height: 200px;
+  }
+}
 
 
 
