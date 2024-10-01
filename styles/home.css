@@ -247,28 +247,6 @@ p {
 
 
 
-.selected-model {
-  font-weight: bold;
-  color: #007bff;
-  text-transform: uppercase;
-}
-.carousel-item img {
-  width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  /* Estilos para tablets y dispositivos medianos */
-  .carousel-item img {
-    height: 300px;
-  }
-}
-@media (max-width: 576px) {
-  /* Estilos para dispositivos móviles */
-  .carousel-item img {
-    height: 200px;
-  }
-}
-
 
 
 

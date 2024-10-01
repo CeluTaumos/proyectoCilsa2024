@@ -9,7 +9,7 @@
 .contact-text {
     color: #0f2027;
     width: 50%;
-    background-image: url(/assets//img//modelos/model6.PNG);
+    background-image: url(/assets/img//modelos/model6.PNG);
     background-position: cover;
     background-repeat: no-repeat;
     padding: 5% 0 0 5%;
@@ -36,17 +36,29 @@ label {
 
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .section-form{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .contact-text {
+        width: 100%;
+        background-size: calc(100%) calc(100% + 50%);
+        background-position: center;
+    }
+
     .box-form {
         width: 100%;
     }
 
-    .contact-text {
-        padding: 5% 0;
-        margin: 0 0 10% 0;
+    .contact-form{
+        width: 100%;
     }
 
     .contact-text h6 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        color: #f3f3f3;
     }
 
     .main-contact {
@@ -56,7 +68,7 @@ label {
 
     .text-form-contact p {
         font-size: 1rem;
-        color: #f3f3f3;
+        color: #0f2027;
     }
 
     label {
@@ -66,9 +78,9 @@ label {
 
 @media screen and (min-width: 1380px) and (max-width: 2560px) {
 
-    .section-form {
-        height: 100vh;
-    }
+.section-form {
+    height: 100vh;
+}
 
 
 .contact-text {
@@ -97,7 +109,6 @@ label {
     font-size: 1rem;
 }
 }
-
 
 /*----------SECTION QUESTIONS-------------*/
 
@@ -160,11 +171,24 @@ label {
     }
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px){}
+@media screen and (min-width: 360px) and (max-width: 767px){
+
+    #questions h3 {
+        font-size: 3rem;
+        margin: 50% 0 0 0;
+    }
+
+    .section-acordion {
+        width: 100%;
+        margin: 1% auto;
+    }
+
+    .accordion-body p {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 1380px) and (max-width: 2560px){
-
-/*----------- QUESTIONS------------------- */
 
     #questions {
         height: 100%;
@@ -188,7 +212,7 @@ label {
     .accordion-body p {
         font-size: 1.1rem;
     }
-    }
+}
 
 
 /*-----------STYLE OF FOOTER----------------------*/

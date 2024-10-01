@@ -2,3 +2,19 @@
 	- Fix card to have the same size (height)
 	- Indent and fix some lines to have proper alignment in correspondent open/closing tags
 	- Overwrite the card-text style in order to have a maximum amount of lines in order to maintain the structure of the card and avoid overflowing text
+
+
+Eliminé carpeta de queries y las centralice en el css correspondiente a cada html. Excepto home, donde pueden ubicar las queries de inicio y about y en contacto donde también están las questions y footer. El resto cada una en su page; así también nos evitamos tener conflictos con tantas css…..
+
+Ajuste el NAV y agregue el archivo animation.js. Para poder tener el efecto de que al click sobre la page este se cierre automáticamente. Seguro ire iterando sobre la version final entre colores: Así que cualquier reco u opinión, siempre será bien recibida.
+Además elimine search bar de contact:  No corresponde un buscador aca.
+
+Respecto a los botones. Por un tema de consistencia en todos los botones, se modificaron los estilos. La idea es que en la máximo posible los botones mantengan el mismo estilo.
+
+Si bien se agregó el form de contacto, seguramente por mi parte iré iterando sobre imagen final y demás estilos. Por ejemplo dentro de unas de los posibles cambios que haga sean, pasar la section de questions en la section de contact debajo del footer, sobre todo por un tema de coherencia en info y tengo algunas idea, para implementar en el home.
+
+Agregue carousel en la section categorías, por ahora las imagenes no tienen la mejor resolution. Pero tengo una idea; quizás intervenga las fotos, quizás para agregarles algún tipo de contenido “Texto” informativo, promocionales o algo similar. Es una posibilidad.
+
+Creare algun CTA en about section.
+
+Creare section de conscecionarios simple page using data de objeto.
