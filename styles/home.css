@@ -20,6 +20,20 @@ h1 h2 h3 h4 h5 {
   color: #f3f3f3;
 }
 
+.buttom-nav{
+  width: 15vw;
+  gap: 2rem;
+  a {
+    text-decoration: none;
+    background-color: rgb(243, 243, 243, .50);
+    color: #0f2027;
+    padding: .4rem;
+    font-size: .6rem;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .buttom-home {
   display: flex;
   gap: 2rem;
@@ -27,7 +41,7 @@ h1 h2 h3 h4 h5 {
   margin: 3% 0;
   a {
     text-decoration: none;
-    background-color: #f3f3f3;
+    background-color: rgb(243, 243, 243, .50);
     color: #0f2027;
     padding: .8rem;
     font-size: 1rem;
@@ -35,7 +49,7 @@ h1 h2 h3 h4 h5 {
 }
 
 .btn-home:hover {
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #44575d);
   color: #fff;
   transition: .5s ease-in-out;
 }

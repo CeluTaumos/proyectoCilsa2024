@@ -9,6 +9,7 @@
   <!-- CCS STYLES -->
   <link rel="stylesheet" href="./styles/generales.css">
   <link rel="stylesheet" href="./styles/home.css" />
+  <link rel="stylesheet" href="./styles/registro.css" />
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,21 +49,18 @@
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon nav-icon"></span>
           </button>
-          <!-- Barra de búsqueda -->
-          <form class="my-2 my-lg-0 ml-lg-3 text-dark camp-form">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Buscar tu auto" aria-label="Buscar tu auto" />
-              <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i><span>
-              </div>
-            </div>
-          </form>
-    </section>
+          <div>
+            <div class="btn-group buttom-nav">
+              <a type=button class="btn-home">Iniciar Sesion</a>
+              <a type=button id="registerButton" class="btn-home" href="/app/pagues/registro.html">Registrarse</a>
+          </div>
+        </div>
+      </section>
     <section class="text-left box-home">
       <h1 class="fw-bold">AutoXpress</h1>
       <h2 class="text-uppercase fw-bolder main-content">Tu próximo auto</h2>
       <p class="main-title">Más cerca de lo que crees</p>
-      <div class="d-flex gap-3 buttom-home">
+      <div class="d-flex buttom-home">
         <a type="button" class="btn-home" href="./pages/categorias.html">
           Más información
         </a>
@@ -133,11 +131,12 @@
 
   <!-- Links de Bootstrap, FontAwesome, etc -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
-  crossorigin="anonymous"></script>
-    <script src="/js/animations.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    crossorigin="anonymous"></script>
+  <script src="/js/animations.js"></script>
+  <script src="/app//public/registro.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
