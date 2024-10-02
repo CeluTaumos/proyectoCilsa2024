@@ -6,7 +6,7 @@
         "title": "Alfa Romeo",
         "description": "Descubre la elegancia y el rendimiento de Alfa Romeo, donde cada modelo combina diseño italiano icónico con tecnología de vanguardia.",
         "image": "../assets/img/autosNuevos/alfaRomeo.jpg",
-        "precio": "7000.0000",
+        "precio": "7.150.0000",
         "link": "/pages/producto.html?id=alfa-romeo",
         "technicals": {
           "engine": "Standard Engine",
@@ -24,6 +24,7 @@
         "title": "Maserati Ghibli",
         "description": "El Maserati Ghibli combina lujo y potencia en una experiencia de conducción excepcional.",
         "image": "../assets/img/autosNuevos/maseratiGhibli.jpg",
+        "precio": "8.000.0000",
         "link": "/pages/producto.html?id=maserati-ghibli",
 
         "technicals": {
@@ -42,6 +43,7 @@
         "title": "Maserati MC20",
         "description": "El Maserati MC20 es un superdeportivo que redefine la velocidad y el rendimiento.",
         "image": "../assets/img/autosNuevos/MaseratiMC20.jpg",
+        "precio": "9.000.0000",
         "link": "/pages/producto.html?id=maserati-mc20",
         "technicals": {
           "engine": "Standard Engine",
@@ -61,6 +63,7 @@
         "title": "Chevrolet Corsa",
         "description": "El Chevrolet Corsa es conocido por su confiabilidad y eficiencia. Con un diseño compacto y una economía de combustible destacada, es la opción ideal para la ciudad y viajes cortos.",
         "image": "/assets/img/modelos/sinbg/used1.png",
+        "precio": "7.000.0000",
         "link": "/pages/producto.html?id=chevrolet-corsa",
         "technicals": {
           "engine": "Standard Engine",
@@ -78,6 +81,7 @@
         "title": "Renault Clio",
         "description": "El Renault Clio combina estilo y funcionalidad en un solo paquete. Su interior espacioso y tecnología avanzada hacen que cada viaje sea cómodo y placentero, perfecto para familias y aventureros.",
         "image": "/assets/img/modelos/sinbg/used1.pngg",
+        "precio": "7.000.0000",
         "link": "/pages/producto.html?id=renault-clio",
         "technicals": {
           "engine": "Standard Engine",
@@ -95,6 +99,7 @@
         "title": "Volkswagen Gol",
         "description": "El Volkswagen Gol es un clásico en el segmento de los hatchbacks. Con su diseño robusto y motor eficiente, ofrece un rendimiento excepcional y una experiencia de conducción ágil en cualquier entorno.",
         "image": "/assets/img/modelos/sinbg/used1.png",
+        "precio": "7.000.0000",
         "link": "/pages/producto.html?id=volkswagen-gol",
         "technicals": {
           "engine": "Standard Engine",

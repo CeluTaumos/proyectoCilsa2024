@@ -1,16 +1,33 @@
-.description-product{
-    font-size: 1.5rem;
-    margin: .6rem 0;
+.description-product {
+  font-size: 1.5rem;
+  margin: 0.6rem 0;
 }
 
-.nav-producto{
-    color: #f3f3f3;
+.nav-producto {
+  color: #f3f3f3;
 }
 
-.menu-product a{
-    color: #f3f3f3!important;
+.menu-product a {
+  color: #f3f3f3 !important;
 }
 
-.menu-product h2{
-    font-size: .5rem;
+.menu-product h2 {
+  font-size: 0.5rem;
+}
+
+.btn-black {
+  color: #0f2027;
+  padding: 1%;
+  border: 1px solid #0f2027;
+  transition: 0.7s ease, color 0.7s ease;
+  margin: 0.5rem;
+}
+
+.btn-black:hover {
+  background: #bdc3c7;
+  text-decoration: none;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+  color: #fff;
+  transition: 0.7s ease, color 0.7s ease;
 }

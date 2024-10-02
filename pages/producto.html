@@ -3,63 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- BOOTSTRAP -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-      <!-- CCS STYLES -->
+    <!-- BOOTSTRAP -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- CCS STYLES -->
     <link rel="stylesheet" href="../styles/generales.css" />
     <link rel="stylesheet" href="../styles/productos.css" />
-      <!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"rel="stylesheet"/>
-    <title>AutoXpress - Detalles de la Harley Davidson 883</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>AutoXpress - Detalles del Auto</title>
   </head>
   <body>
     <!-- Header -->
     <header class="menu-product Secondary">
       <section class="navbar navbar-expand-lg section-navbar">
-        <!-- logo en nav -->
-        <a class="navbar-brand" href="/index.html"><img src="/source/logofinal.png" alt="logo AutoXpress"
-                class="img-fluid logo" /><a>
-                <!-- Menu de navegacion -->
-                <nav class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav box-navbar">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/pages/categorias.html">Comprar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                    </ul>
-                </nav>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon nav-icon"></span>
-                </button>
-    </section>
+        <a class="navbar-brand" href="/index.html"
+          ><img
+            src="/source/logofinal.png"
+            alt="logo AutoXpress"
+            class="img-fluid logo"
+        /></a>
+        <nav class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav box-navbar">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/categorias.html">Comprar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon nav-icon"></span>
+        </button>
+      </section>
     </header>
     <main class="container mt-5 main-producto">
-      <h1 id="car-title"></h1>
-      <img id="car-image" src="" alt="Car Image">
-      <p id="car-description"></p>
-      <p id="car-price"></p>
-      
+      <div class="row">
+        <div class="col-md-6 mt-4">
+          <h2 id="car-title" class="text-center"></h2>
+          <img id="car-image" src="" alt="Car Image" class="img-fluid mb-3" />
+        </div>
+        <div class="col-md-6 mt-4">
+          <p id="car-description"></p>
+          <p id="car-price" class="font-weight-bold"></p>
+          <h3>Detalles Técnicos:</h3>
+          <ul id="car-technical-details" class="list-group mb-3">
+            <!-- Ejemplo de item de lista -->
+            <li class="list-group-item">Detalle 1</li>
+            <li class="list-group-item">Detalle 2</li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="../pages/categorias.html" class="btn btn-dark mt-3">
+          Volver Atrás
+        </a>
+      </div>
     </main>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
       crossorigin="anonymous"
     ></script>
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="../js/dataProducto.js"></script>
     <script src="../js/filtros.js"></script>

@@ -12,35 +12,42 @@ async function fetchJSONData() {
   }
 }
 
-// Función para obtener el ID de la URL
 function getCarIdFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get("id");
 }
 
-// Función para cargar los detalles del producto
 async function loadCarDetails() {
   const carId = getCarIdFromURL();
   const carData = await fetchJSONData();
 
   if (carData) {
-    // Asegúrate de que carData no sea null
-    // Encuentra el coche correspondiente en la base de datos
     const car = Object.values(carData.cars.new)
       .concat(Object.values(carData.cars.used))
       .find((car) => car.id === carId);
 
     if (car) {
-      // Llenar la información en la página
       document.getElementById("car-title").innerText = car.title;
       document.getElementById("car-description").innerText = car.description;
-      document.getElementById("car-price").innerText = car.precio;
+      document.getElementById("car-price").innerText = `Precio: $${car.precio}`;
+
       document.getElementById("car-image").src = car.image;
+
+      const technicalDetails = document.getElementById("car-technical-details");
+      technicalDetails.innerHTML = "";
+      for (const [key, value] of Object.entries(car.technicals)) {
+        const listItem = document.createElement("li");
+        listItem.className =
+          "list-group-item d-flex justify-content-between align-items-center";
+        listItem.innerHTML = `<span class="material-icons">info</span> ${
+          key.charAt(0).toUpperCase() + key.slice(1)
+        }: ${value}`;
+        technicalDetails.appendChild(listItem);
+      }
     } else {
       console.error("Car not found");
     }
   }
 }
 
-// Llama a la función al cargar la página
 document.addEventListener("DOMContentLoaded", loadCarDetails);
