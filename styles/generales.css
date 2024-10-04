@@ -7,7 +7,11 @@ h5 {
 }
 
 .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: #204c70;
+}
+
+.navbar-toggler-icon {
+    background-color: rgb(59, 105, 142, .50);
 }
 
 
