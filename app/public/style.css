@@ -4,7 +4,7 @@
     bottom: 35%;
     right: 35%;
     height: 50vh;
-    min-width: 30%;
+    width: 30%;
     color: #cad6dd;
     border-radius: 1rem;
     font-size: 0.9em;
@@ -14,4 +14,17 @@
 form{
     flex-direction: column;
     align-items: center;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    .form-register{
+        width: 90%;
+        height: 80vh;
+        right: 0;
+        bottom: 5%;
+        left: 5%;
+        padding: 5%;
+    }
+
 }
