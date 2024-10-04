@@ -151,12 +151,29 @@ p {
   object-fit: cover;
 }
 
+.box-buttom-nav{
+  width: 100%;
+  padding: 5% 0;
+}
+
+.buttom-nav{
+  width: 100%;
+  margin: auto;
+  a{
+    width: 15%;
+    margin: auto;
+    padding: 1%;
+    border: 1px solid #000;
+  }
+}
+
+
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
 
   #header {
     background-image: url("../assets/img/bg-img/contact4.PNG");
-    background-size: calc(100% + 20px) calc(80%);
+    background-size: calc(100% + 10px) calc(70%);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -178,7 +195,7 @@ p {
 
   .box-home {
     width: 100%;
-    margin: 50% 0 0 5%;
+    margin: 60% 0 0 5%;
     color: #f3f3f3;
     line-height: 60px;
   }
@@ -216,6 +233,19 @@ p {
 
   .box-img {
     margin: 1rem 0;
+  }
+
+  .box-buttom-nav{
+    padding: 5% 0;
+  }
+
+  .buttom-nav{
+    a{
+      width: 20%;
+      margin: auto;
+      padding: 1.5%;
+      border: 2px solid #000;
+    }
   }
 }
 

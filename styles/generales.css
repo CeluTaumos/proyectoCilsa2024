@@ -3,105 +3,113 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Rubik", sans-serif;
-}
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.1);
+    font-family: "Rubik", sans-serif;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
 }
+
 
 /* STYLES GENERAL OF NAV */
 #navbarNav {
-  width: 100%;
-  margin: 0 15% 0 0;
+    width: 100%;
+    margin: 0 15% 0 0;
 }
 
 .box-navbar {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  li {
-    list-style: none;
-    a {
-      font-size: 1rem;
-      color: #0f2027;
-      font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+    li {
+        list-style: none;
+
+        a {
+            font-size: 1rem;
+            color: #0f2027;
+            font-weight: bold;
+        }
     }
-  }
 }
 
 .section-navbar {
-  background-color: #9294544d;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-  padding: 0 5%;
+    background-color: #9294544d;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 5%;
 }
 
 .navbar-brand img {
-  width: 30%;
+    width: 30%;
 }
 
 .camp-form {
-  width: 50%;
+    width: 50%;
 }
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
-  .section-navbar button {
-    position: absolute;
-    bottom: 20%;
-    left: 80%;
-  }
-
-  .navbar-collapse {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    background-color: #0f2027;
-  }
-
-  .box-navbar {
-    width: 100%;
-    height: 100vh;
-    justify-content: space-evenly;
-    li {
-      a {
-        font-size: 2rem;
-        text-align: center;
-        color: #f3f3f3;
-      }
+    .section-navbar {
+        background-color: #f3f3f3;
     }
-  }
 
-  .navbar-brand img {
-    width: 30%;
-  }
+    .section-navbar button {
+        position: absolute;
+        bottom: 20%;
+        left: 80%;
+    }
 
-  .nav-icon {
-    border: 2px solid rgb(208, 213, 225);
-  }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        z-index: 10;
+        background-color: #0f2027;
+    }
 
-  .camp-form {
-    display: none;
-  }
+    .box-navbar {
+        width: 100%;
+        height: 90vh;
+        justify-content: flex-start;
+
+        li {
+            padding: 10% 0;
+            a {
+                font-size: 1.5rem;
+                text-align: center;
+                color: #f3f3f3;
+            }
+        }
+    }
+
+    .navbar-brand img {
+        width: 30%;
+    }
+
+    .nav-icon {
+        border: 2px solid rgb(208, 213, 225);
+    }
+
+    .camp-form {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1380px) and (max-width: 2560px) {
-  .box-navbar {
-    li {
-      a {
-        font-size: 1.2rem;
-      }
+    .box-navbar {
+        li {
+            a {
+                font-size: 1.2rem;
+            }
+        }
     }
-  }
-  .navbar-brand img {
-    width: 30%;
-  }
-  .camp-form {
-    width: 40%;
-  }
+
+    .navbar-brand img {
+        width: 30%;
+    }
+
+    .camp-form {
+        width: 40%;
+    }
 }
