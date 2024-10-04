@@ -80,7 +80,7 @@
         "id": "renault-clio",
         "title": "Renault Clio",
         "description": "El Renault Clio combina estilo y funcionalidad en un solo paquete. Su interior espacioso y tecnología avanzada hacen que cada viaje sea cómodo y placentero, perfecto para familias y aventureros.",
-        "image": "/assets/img/modelos/sinbg/used1.pngg",
+        "image": "/assets/img/modelos/sinbg/mode6.png",
         "precio": "7.000.0000",
         "link": "/pages/producto.html?id=renault-clio",
         "technicals": {
@@ -98,7 +98,7 @@
         "id": "volkswagen-gol",
         "title": "Volkswagen Gol",
         "description": "El Volkswagen Gol es un clásico en el segmento de los hatchbacks. Con su diseño robusto y motor eficiente, ofrece un rendimiento excepcional y una experiencia de conducción ágil en cualquier entorno.",
-        "image": "/assets/img/modelos/sinbg/used1.png",
+        "image": "/assets/img/modelos/sinbg/mode7.png",
         "precio": "7.000.0000",
         "link": "/pages/producto.html?id=volkswagen-gol",
         "technicals": {
